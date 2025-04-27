@@ -3,7 +3,7 @@
  *  Template Ver. 1.0.0
  *  11-05-2019
  *  ------------------------------------------------------------------
- *
+ *b3c2ff
  *  TOC:
  *  # custom block grid STACK breakpoints
  *  # base style overrides
@@ -1736,7 +1736,7 @@ input::-moz-focus-inner {
 .header-nav li {
   display: inline-block;
   padding-left: 0;
-  margin: 0 1 rem;
+  margin: 0 1rem;
 }
 
 /* ------------------------------------------------------------------- 
