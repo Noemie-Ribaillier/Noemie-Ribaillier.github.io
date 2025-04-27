@@ -1861,7 +1861,7 @@ input::-moz-focus-inner {
     max-width: none;
     width: 100%;
     /* change here 13.2 */
-    padding-left: 7.2rem;
+    padding-left: 13.2rem;
   }
 
   .header-content .btn {
