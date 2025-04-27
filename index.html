@@ -57,10 +57,15 @@
         </div> -->
 
         <div class="header-content">
-    
+            <!-- Language Switcher Flags -->
+            <div class="language-switcher" style="position: absolute; top: 20px; right: 20px; display: flex; gap: 10px;">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English" style="width: 30px; height: 20px; cursor: pointer;" onclick="changeLanguage('en')">
+                <img src="https://flagcdn.com/w40/fr.png" alt="Français" style="width: 30px; height: 20px; cursor: pointer;" onclick="changeLanguage('fr')">
+            </div>
+
             <nav class="row header-nav-wrap">
                 <ul class="header-nav">
-                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#hero" title="Intro" id="nav-home" data-en="Home" data-fr="Accueil">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="About">About me</a></li>
                     <li><a class="smoothscroll" href="#career" title="Career">Career</a></li>
                     <li><a class="smoothscroll" href="#formation" title="Formation">Formation & Certification</a></li>
@@ -69,7 +74,7 @@
                 </ul>
             </nav> <!-- end header-nav-wrap -->
 
-            <a href="https://github.com/your-username/your-repository/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small">Download CV</a>
+            <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small">Download CV</a>
 
         </div> <!-- end header-content -->
 
@@ -78,6 +83,14 @@
     </header> 
 
 
+
+    <nav class="row header-nav-wrap">
+        <ul class="header-nav">
+            <li><a class="smoothscroll" href="#hero" title="Intro" id="nav-home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="About" id="nav-about">About me</a></li>
+            <li><a class="smoothscroll" href="#career" title="Career" id="nav-career">Career</a></li>
+
+-----------------------------------------
     <!-- hero
     ================================================== -->
     <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/IMG_20240320_110434.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
@@ -128,7 +141,7 @@
 
                     <div class="section-intro" data-num="01" data-aos="fade-up">
                         <h3 class="subhead">About Me</h3>
-                        <h1 class="display-1">I'm rigorous, determined, never tired of challenges and improving my skills.</h1>
+                        <h1 class="display-1">I'm rigorous, determined, never tired of challenges and constantly upgrading my skills.</h1>
                     </div>
 
                     <div class="profile-pic" data-aos="fade-up">
@@ -772,7 +785,7 @@
 
     </footer> <!-- end s-footer -->
 
-    
+
 
     <!-- photoswipe background
     ================================================== -->
@@ -819,5 +832,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    
+    <!-- Language -->
+    <script>
+        function changeLanguage(lang) {
+          const elements = document.querySelectorAll('[data-en]');
+          elements.forEach(el => {
+            el.textContent = el.getAttribute(`data-${lang}`);
+          });
+        }
+        </script>
 </body>
