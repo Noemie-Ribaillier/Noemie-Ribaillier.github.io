@@ -1040,10 +1040,13 @@
     <!-- Language -->
     <script>
         function changeLanguage(lang) {
-          const elements = document.querySelectorAll('[data-en]');
+          const elements = document.querySelectorAll('[data-en], [data-fr]');
           elements.forEach(el => {
-            el.textContent = el.getAttribute(`data-${lang}`);
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+            // el.textContent = el.getAttribute(`data-${lang}`);
           });
         }
         </script>
 </body>
+
+
