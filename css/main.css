@@ -353,7 +353,8 @@ code {
   font-size: 1.4rem;
   margin: 0 .2rem;
   padding: .4rem .8rem;
-  white-space: nowrap;
+  /* change here nowrap */
+  white-space: normal;
   background: #efefef;
   border: 1px solid #d3d3d3;
   color: #000000;
@@ -1709,8 +1710,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav-wrap {
   max-width: 1400px;
-  /* change here padding-left: 10px; */
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 .header-nav {
@@ -1861,7 +1861,6 @@ input::-moz-focus-inner {
   .header-nav-wrap {
     max-width: none;
     width: 100%;
-    /* change here 13.2 */
     padding-left: 13.2rem;
   }
 
@@ -2725,9 +2724,7 @@ html.no-csstransitions .hero-content {
 }
 
 .is-active .services-list__item-body {
-  /* change here display: block; */
-
-  display: none;
+  display: block;
 }
 
 /* ------------------------------------------------------------------- 
