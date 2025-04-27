@@ -2750,6 +2750,21 @@ html.no-csstransitions .hero-content {
 .keyword:hover {
   background-color: #d1d1d1;
 }
+
+.keyword2 {
+  background-color: #333;
+  color: #e0e0e0 ;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.keyword2:hover {
+  background-color: #d1d1d1;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
