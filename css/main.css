@@ -2732,7 +2732,8 @@ html.no-csstransitions .hero-content {
   display: flex;
   flex-wrap: wrap;
   gap: 10px; /* space between keywords */
-  margin-top: 20px;
+  /* change here from top to bottom margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .keyword {
