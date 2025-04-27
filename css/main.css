@@ -1709,7 +1709,8 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav-wrap {
   max-width: 1400px;
-  padding-left: 10px;
+  /* change here padding-left: 10px; */
+  padding-left: 0px;
 }
 
 .header-nav {
@@ -1735,8 +1736,7 @@ input::-moz-focus-inner {
 .header-nav li {
   display: inline-block;
   padding-left: 0;
-  /* change here was 1 rem */
-  margin: 0 0;
+  margin: 0 1 rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2725,7 +2725,9 @@ html.no-csstransitions .hero-content {
 }
 
 .is-active .services-list__item-body {
-  display: block;
+  /* change here display: block; */
+
+  display: none;
 }
 
 /* ------------------------------------------------------------------- 
