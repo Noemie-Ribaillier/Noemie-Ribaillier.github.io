@@ -2747,9 +2747,9 @@ html.no-csstransitions .hero-content {
   cursor: default;
 }
 
-.keyword:hover {
+/* .keyword:hover {
   background-color: #d1d1d1;
-}
+} */
 
 .keyword2 {
   background-color: #333;
@@ -2762,9 +2762,9 @@ html.no-csstransitions .hero-content {
   cursor: default;
 }
 
-.keyword2:hover {
+/* .keyword2:hover {
   background-color: #d1d1d1;
-}
+} */
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
