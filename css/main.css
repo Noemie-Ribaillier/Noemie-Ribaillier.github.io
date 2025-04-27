@@ -2463,7 +2463,7 @@ html.no-csstransitions .hero-content {
   content: "";
   display: block;
   /* change b3c2c1 */
-  background-color: #b3c2ff;
+  background-color: #b3c2c1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2500,7 +2500,7 @@ html.no-csstransitions .hero-content {
 .position {
   padding-top: 3.6rem;
   padding-bottom: 3.2rem;
-  border-top: 1px solid #b3c2ff;
+  border-top: 1px solid #b3c2c1;
 }
 
 .position__header {
@@ -2830,7 +2830,7 @@ html.no-csstransitions .hero-content {
 .s-portfolio::before {
   content: "";
   display: block;
-  background-color: #b3c2ff;
+  background-color: #b3c2c1;
   position: absolute;
   top: 0;
   right: 0;
