@@ -1027,4 +1027,22 @@
         // Initialize language on page load
         changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
     </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const currentPage = window.location.hash; // Get the current hash (e.g., #home)
+            
+            // Find the navbar links
+            const navLinks = document.querySelectorAll('.header-nav');
+            
+            // Loop through and add the 'active' class to the matching link
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
