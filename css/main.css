@@ -2121,7 +2121,7 @@ input::-moz-focus-inner {
 
 .hero-social a {
   /* CHANGE HERE #ffffff */
-  color: #f10909;
+  color: #ffffff;
 }
 
 .hero-social a:hover,
@@ -2176,6 +2176,42 @@ input::-moz-focus-inner {
 .hero-social2 a:active {
   color: #f9861a;
 }
+
+/* -------------------------------------------------------------------
+ * ## certificat
+ * ------------------------------------------------------------------- */
+
+ .certificate {
+  list-style: none;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  margin-top: 8rem;
+  margin-left: .4rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.certificate a {
+  /* CHANGE HERE #ffffff */
+  color: #f9861a;
+}
+
+/* .hero-social a:hover,
+.hero-social a:focus,
+.hero-social a:active {
+  color: #f9861a;
+} */
 
 /* -------------------------------------------------------------------
  * ## hero scroll
