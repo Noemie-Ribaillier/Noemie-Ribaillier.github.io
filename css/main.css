@@ -2161,9 +2161,9 @@ input::-moz-focus-inner {
   line-height: 3.2rem;
   text-transform: uppercase;
   letter-spacing: .5em;
-  margin-top: 0;
+  margin-top: 0rem;
   margin-left: .4rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   position: relative;
 }
 
@@ -2196,9 +2196,9 @@ input::-moz-focus-inner {
   line-height: 3.2rem;
   text-transform: uppercase;
   letter-spacing: .5em;
-  margin-top: 8rem;
+  margin-top: 0rem;
   margin-left: .4rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   position: relative;
   color: #f9861a;
 }
