@@ -2181,7 +2181,7 @@ input::-moz-focus-inner {
  * ## certificat
  * ------------------------------------------------------------------- */
 
- .certificate {
+.certificate {
   list-style: none;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -2214,6 +2214,18 @@ input::-moz-focus-inner {
   color: #f9861a;
 } */
 
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.icon2 {
+  color: #f9861a; /* You control color here! */
+  vertical-align: middle;
+  margin-right: 8px;
+}
 /* -------------------------------------------------------------------
  * ## hero scroll
  * ------------------------------------------------------------------- */
