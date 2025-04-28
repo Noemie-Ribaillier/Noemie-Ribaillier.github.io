@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
+<html class="no-js" lang="en">
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Portfolio - name</title>
+    <title>Portfolio - Noémie Ribaillier</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -15,440 +15,1284 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles_new.css">
 
-    
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="NR_vignette.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
 <body id="top">
 
 
-    <!-- # preloader
+    <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 
 
-    <!-- # page wrap
+    <!-- header
     ================================================== -->
-    <div class="s-pagewrap">
+    <header class="s-header">
+
+        <div class="header-content">
+            
+
+            <nav class="row header-nav-wrap">
+                <!-- Language Switcher Flags -->
+                <div class="language-switcher" style="display: flex; align-items: center; gap: 10px; margin-right: 30px;">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" style="width: 30px; height: 20px; cursor: pointer;" onclick="changeLanguage('en')">
+                    <img src="https://flagcdn.com/w40/fr.png" alt="Français" style="width: 30px; height: 20px; cursor: pointer;" onclick="changeLanguage('fr')">
+                </div>
+
+                <ul class="header-nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro" id="nav-intro" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About" id="nav-about" data-en="About" data-fr="A propos">About</a></li>
+                    <li><a class="smoothscroll" href="#expertise" title="Expertise" id="nav-expertise" data-en="Expertise" data-fr="Expertise">Expertise</a></li>
+                    <li><a class="smoothscroll" href="#career" title="Career" id="nav-career" data-en="Career" data-fr="Carrière">Career</a></li>
+                    <li><a class="smoothscroll" href="#formation" title="Formation" id="nav-formation" data-en="Education & Certifications" data-fr="Formation & Certifications">Education & Certifications</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Works" id="nav-portfolio" data-en="Personal projects" data-fr="Projets personnels">Personal projects</a></li>
+                    <li><a href="mailto:name@gmail.com" title="Contact me" id="nav-contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                </ul>
+
+            </nav> <!-- end header-nav-wrap -->
+
+            <!-- <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV">Download my CV</a> -->
+            <!-- English link -->
+            <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="english-link">Download my CV</a>
+            <!-- French link -->
+            <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_FR.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="french-link">Download my CV</a>
+
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/IMG_20240320_110434.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="row hero-content">
+
+            <div class="column large-full">
+
+                <h1 data-en="Welcome to my website<br>I'm Noémie Ribaillier<br>Data Analyst BI - Data Scientist<br>with over 6 years experience<br>" 
+                    data-fr="Bienvenue sur mon site web<br>Je suis Noémie Ribaillier<br>Data Analyst BI - Data Scientist<br>avec plus de 6 ans d'expérience<br>">
+                    Welcome to my website<br>I'm Noémie Ribaillier<br>Data Analyst BI - Data Scientist<br>with over 6 years experience<br>
+                </h1>
+
+                <!-- <h1>
+                    Welco <br>
+                    to <br>
+                </h1> -->
+
+                <ul class="hero-social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/noemie-ribaillier/" title="LinkedIn" target="_blank">LinkedIn</a>
+
+                    </li>
+                    <li>
+                        <a href="https://github.com/Noemie-Ribaillier/" title="GitHub" target="_blank">GitHub</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+            </div> 
+
+        </div> <!-- end hero-content -->
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
 
 
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
 
+        <div class="s-about__section s-about__section--profile">
 
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html"> name</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <!-- <li><a href="index.html" class="home-link"> </a></li> -->
-                        <li class="current"><a href="#about" class="smoothscroll">About me</a></li>
-                        <!-- <li><a href="#about" class="smoothscroll">About</a></li> -->
-                        <li><a href="#works" class="smoothscroll">Professional experience</a></li>
-                        <li><a href="#education" class="smoothscroll">Education and certifications</a></li>
-                        <li><a href="#projects" class="smoothscroll">Personal projects</a></li>
-                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
-        <main class="s-content">
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/Linkedin_picture2.jpg" 
-                             srcset="images/Linkedin_picture2.jpg 1x, images/Linkedin_picture2.jpg 2x" alt="" class="about-info__pic" data-animate-el>
-                    </div>
-
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text" >
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About me
-                            </h2>
-                            <p class="attention-getter" data-animate-el>
-                                Passionnee de data blabla
-                            </p>
-                            <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
-
-                        </div>
-                    </div>
-                </div> <!-- about-info -->
-
-
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Visual Design</li>
-                            <li>Branding Identity</li>
-                            <li>UI Design</li>
-                            <li>Product Design</li>
-                            <li>Prototyping</li>
-                            <li>Illustration</li>
-                        </ul>
-
-                    </div>
-                </div> 
-                <!-- end about-expertise -->
-            </section> <!-- end s-about -->
-        
-            <!-- ### works
-            ================================================== -->
-            <section id="projects" class="s-works target-section">
-
-
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Recent personnal projects
-                        </h2>
-                        <p class="attention-getter" data-animate-el>
-                            Here are some of the projects I have worked on during my free time. Please feel free to check them out.
-                        </p>
-    
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/fuji.jpg"
-                                             srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x"  alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Computer Vision
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Image classification
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-02">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/lamp.jpg" 
-                                             srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Computer Vision
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Semantic segmentation images
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/rucksack.jpg" 
-                                             srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack@2x.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            NLP
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Emojifier
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-04">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/skaterboy.jpg"
-                                             srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Transformers
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Q&A
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-05">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/sanddunes.jpg" 
-                                             srcset="images/portfolio/sanddunes.jpg 1x, images/portfolio/sanddunes@2x.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Illustration
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Sand Dunes.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-06">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/minimalismo.jpg" 
-                                             srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x" alt="">
-                                    </div>
-                                    
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Branding
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Minimalismo.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <!-- <img src="images/portfolio/gallery/g-fuji.jpg" alt=""> -->
-                
-                            <div class="modal-popup__desc">
-                                <h5>Image classification</h5>
-                                <p>Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation <br>
-                                    Project explanation</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Key word1</li>
-                                    <li>Key word2</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://github.com/name/image_classification" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-02" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Semantic image segmentation</h5>
-                                <p>Project explanations.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Key word1</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://github.com/name-/image_segmentation" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-03" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Rucksuck</h5>
-                                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-04" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Since Day One</h5>
-                                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Website</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-05" hidden>
-                        <div class="modal-popup">
-
-                            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Sand Dunes</h5>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Illustration</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-06" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Minimalismo</h5>
-                                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Branding</li>
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                </div> <!-- end works-portfolio -->
-
-
-               
-            </section> <!-- end s-works -->
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact-top">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Get In Touch
-                        </h2>
-
-                        <p class="h1">
-                            I love to hear from you.
-                            Whether you have a question or just 
-                            want to chat about design, tech & art — shoot me a message.
-                        </p>
-                    </div>
-                </div> <!-- end contact-top -->
-
-                <div class="row contact-bottom">
-                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:" class="mailtoui"></a> <br>
-                        </p>
-                    </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="#0">Github</a></li>
-                            <li><a href="#0">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:" class="mailtoui btn btn--medium u-fullwidth contact-btn">Contact</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
-
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
+            <div class="right-vert-line"></div>
 
             <div class="row">
-                <div class="column ss-copyright">
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="01" data-aos="fade-up">
+                        <h3 class="subhead" data-en="About" data-fr="À propos">
+                            About
+                        </h3>
+                        <h1 class="display-1" 
+                        data-en="I'm rigorous, determined, never tired of challenges and constantly upgrading my skills." 
+                        data-fr="Je suis rigoureuse, persévérante, je suis toujours partante pour un nouveau challenge et j'améliore constamment mes compétences.">
+                        I'm rigorous, determined, never tired of challenges and constantly upgrading my skills.</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="images/Linkedin_picture2.jpg" 
+                             srcset="images/Linkedin_picture2.jpg 1x, images/Linkedin_picture2.jpg 2x" alt="">
+                    </div>
+
+                    <h3 data-aos="fade-up" data-en="Profile" data-fr="Profil">
+                        Profile
+                    </h3>
+
+                    <div data-aos="fade-up">
+                        <p data-en="I have a double degree in the Econometrics & Statistics fields and I have 6 years of experience (as Data Analyst BI and Data Scientist), among 4 in the Netherlands. You can check more in details my education and work experience below.<br><br>
+                            I keep improving my skills in data and AI studying for certifications and developping projects, as you can also see more in details below.<br><br>
+                            Despite data and AI, I have a strong interest in sport, travelling, baking and doing puzzles.<br>
+                            These are the few sport challenges that I have done:" 
+                            data-fr="J'ai un double diplôme en Econométrie & Statistiques et j'ai 6 ans d'expérience (en tant que Data Analyst BI et Data Scientist), dont 4 aux Pays-Bas. Vous pouvez regarder plus en détails ma formation et mon expérience professionnelle ci-dessous.<br><br>
+                            Je continue à améliorer mes compétences dans la data et l'IA en me formant et en développant des projets, comme vous pouvez le voir plus en détails ci-dessous.<br><br>
+                            A part la data et l'IA, j'ai un très fort intérêt pour le sport, les voyages, la pâtisserie et les puzzles.<br>
+                            Voici les principaux challenges sportifs que j'ai relevés:">
+                            I have a double degree in the Econometrics & Statistics fields and I have 6 years of experience (as Data Analyst BI and Data Scientist), among 4 in the Netherlands. You can check more in details my education and work experience below.<br><br>
+                            I keep improving my skills in data and AI studying for certifications and developping projects, as you can also see more in details below.<br><br>
+                            Despite data and AI, I have a strong interest in sport, travelling, baking and doing puzzles.<br>
+                            These are the few sport challenges that I have done:
+                        </p>
+                        <ul>
+                            <li data-en="Biking the Pieterpad (crossing the Netherlands from south to north)" data-fr="Pédaler le Pieterpad (traversée des Pays-Bas du sud au nord)">Biking the Pieterpad (crossing the Netherlands from south to north)</li>
+                            <li data-en="Hiking the GR10 (Pyrenees crossing from west to east)" data-fr="Randonner le GR10 (traversée des Pyrenées de l'ouest à  l'est)">Hiking the GR10 (Pyrenees crossing from west to east)</li>
+                            <li data-en="Hiking the GR20 (Corsica crossing from north to south)" data-fr="Randonner le GR20 (traversée de la Corse du nord au sud)">Hiking the GR20 (Corsica crossing from north to south)</li>
+                            <li data-en="Amsterdam half marathon" data-fr="Semi-marathon d'Amsterdam">Amsterdam half marathon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-about__section--profile -->
+    </section>
+
+
+
+    <!-- services
+    ================================================== -->
+    <section id="expertise" class="s-services target-section h-dark-bg">
+        
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column large-6 s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead" data-en="Expertise" data-fr="Expertise">
+                        Expertise
+                    </h3>
+
+                    <h1 class="display-1" 
+                    data-en="I cover multiple facets of the data workflow." 
+                    data-fr="Je couvre de multiples facettes du flux de données.">
+                    I cover multiple facets of the data workflow.
+                    </h1>
                 </div>
 
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
-                    </a>
+                <p class="lead" data-aos="fade-up" 
+                data-en="Gathering my work experience and my personnal projects, I have worked on many different data projects.<br>
+                I also have experience in many different sectors: real instate and investment, automotive and marketing, telecom, energy, transport, etc." 
+                data-fr="En rassemblant mon expérience professionnelle et mes projets personnels, j'ai travaillé sur de nombreux projets de données très variés.<br>
+                J'ai de l'expérience dans de nombreux secteurs différents : immobilier et investissement, automobile et marketing, télécommunications, énergie, transport, etc.">
+                Gathering my work experience and my personnal projects, I have worked on many different data projects.<br>
+                I also have experience in many different sectors: real instate and investment, automotive and marketing, telecom, energy, transport, etc.
+                </p>
+
+            </div> <!-- end  s-services--leftcol -->
+
+            <div class="column large-6">
+                <ul class="services-list" data-aos="fade-up">
+                    <li class="services-list__item">
+                        <!-- services-list__item is-active -->
+                        <div class="services-list__item-header">
+                            <h5 data-en="Data analyse" data-fr="Analyse de données">
+                                Data analyse
+                            </h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p 
+                            data-en="Data analysis is the process of inspecting, cleaning, transforming, and interpreting data to discover useful information, draw conclusions, and support decision-making." 
+                            data-fr="L'analyse des données est le processus d'inspection, de nettoyage, de transformation et d'interprétation des données afin de découvrir des informations utiles, de tirer des conclusions et de soutenir la prise de décision.">
+                            Data analysis is the process of inspecting, cleaning, transforming, and interpreting data to discover useful information, draw conclusions, and support decision-making.>
+                            </p>
+                            <div class="keywords">
+                                <span class="keyword">Python</span>
+                                <span class="keyword">R</span>
+                            </div>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5 data-en="Data visualization" data-fr="Visualisation des données">Data visualization</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p 
+                            data-en="Data visualization is the practice of representing data and information visually (using charts, graphs, maps, and other visual formats) to make complex data easier to understand and interpret." 
+                            data-fr="La visualisation des données est la pratique qui consiste à représenter visuellement des données et des informations (à l'aide de diagrammes, de graphiques, de cartes et d'autres formats visuels) afin de faciliter la compréhension et l'interprétation de données complexes.">
+                            Data visualization is the practice of representing data and information visually (using charts, graphs, maps, and other visual formats) to make complex data easier to understand and interpret.>
+                            </p>
+                            <div class="keywords">
+                                <span class="keyword">Tableau</span>
+                                <span class="keyword">PBI</span>
+                                <span class="keyword">Qlik Sense</span>
+                                <span class="keyword">Shiny</span>
+                                <span class="keyword">Streamlit</span>
+                            </div>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5 data-en="Data modeling" data-fr="Modélisation de données">Data modeling</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            All aspects of Data modeling
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5 data-en="Machine learning" data-fr="Apprentissage automatique">Machine learning</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p 
+                            data-en="Machine learning is a field of artificial intelligence that focuses on building algorithms that allow computers to automatically learn patterns from data and make predictions or decisions without human intervention. It involves training models on large datasets to recognize patterns, make predictions, and improve performance over time as more data becomes available."
+                            data-fr="L'apprentissage automatique est un domaine de l'intelligence artificielle qui se concentre sur la construction d'algorithmes permettant aux ordinateurs d'apprendre automatiquement des modèles à partir de données et de faire des prédictions ou de prendre des décisions sans intervention humaine. Il s'agit d'entraîner des modèles sur de grands ensembles de données afin de reconnaître des schémas, de faire des prédictions et d'améliorer les performances au fil du temps, à mesure que de nouvelles données sont disponibles.">
+                            Machine learning is a field of artificial intelligence that focuses on building algorithms that allow computers to automatically learn patterns from data and make predictions or decisions without human intervention. It involves training models on large datasets to recognize patterns, make predictions, and improve performance over time as more data becomes available.
+                            </p>
+                            <div class="keywords">
+                                <span class="keyword">Python</span>
+                                <span class="keyword">scikit-learn</span>
+                                <span class="keyword">R</span>
+                                <span class="keyword">CARET</span>
+                                <span class="keyword">CV</span>
+                                <div class="break"></div>
+                                <span class="keyword">Trees</span>
+                                <span class="keyword">Random Forest</span>
+                                <span class="keyword">XGBoost</span>
+                                <span class="keyword">GBM</span>
+                            </div>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5 data-en="Deep learning" data-fr="Apprentissage profond">Deep learning</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p data-en="Deep learning is a subset of machine learning that uses neural networks with many layers (called deep neural networks) to model and solve complex problems, such as image recognition, natural language processing, and autonomous driving, by automatically learning hierarchical patterns from large amounts of data."
+                            data-fr="L'apprentissage profond est un sous-ensemble de l'apprentissage automatique qui utilise des réseaux neuronaux à plusieurs couches (appelés réseaux neuronaux profonds) pour modéliser et résoudre des problèmes complexes, tels que la reconnaissance d'images, le traitement du langage naturel et la conduite autonome, en apprenant automatiquement des modèles hiérarchiques à partir de grandes quantités de données.">
+                            Deep learning is a subset of machine learning that uses neural networks with many layers (called deep neural networks) to model and solve complex problems, such as image recognition, natural language processing, and autonomous driving, by automatically learning hierarchical patterns from large amounts of data.
+                            </p>
+                            <div class="keywords">
+                                <span class="keyword">Python</span>
+                                <span class="keyword">TensorFlow</span>
+                                <span class="keyword">Keras</span>
+                                <span class="keyword">PyTorch</span>
+                                <div class="break"></div>
+                                <span class="keyword" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</span>
+                                <span class="keyword">NLP</span>
+                                <span class="keyword">Transformers</span>
+                            </div>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5 data-en="Artificial Intelligence" data-fr="Intelligence Artificielle">Artificial Intelligence</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p data-en="Artificial Intelligence (AI) is the field of computer science focused on creating systems and machines that can perform tasks typically requiring human intelligence, such as reasoning, learning, problem-solving, understanding language, and recognizing patterns."
+                            data-fr="L'intelligence artificielle (IA) est le domaine de l'informatique qui se concentre sur la création de systèmes et de machines capables d'effectuer des tâches nécessitant généralement l'intelligence humaine, telles que le raisonnement, l'apprentissage, la résolution de problèmes, la compréhension du langage et la reconnaissance de modèles.">
+                                Artificial Intelligence (AI) is the field of computer science focused on creating systems and machines that can perform tasks typically requiring human intelligence, such as reasoning, learning, problem-solving, understanding language, and recognizing patterns.
+                            </p>
+                            <div class="keywords">
+                                <span class="keyword" data-en="Machine Learning" data-fr="Apprentissage automatique">Machine Learning</span>
+                                <span class="keyword" data-en="Deep Learning" data-fr="Apprentissage profond">Deep Learning</span>
+                                <span class="keyword">Python</span>
+                            </div>
+                        </div>
+                    </li> <!-- services-list__item -->
+                </ul> <!-- end services-list -->
+            </div>
+
+        </div> <!-- s-services__content -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- career
+    ================================================== -->
+    <section id="career" class="s-about target-section">
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up" data-en="Career" data-fr="Carrière">Career</h3>
                 </div>
             </div>
 
-        </footer> <!-- end s-footer -->
+            <div class="row block-large-1-2 block-900-full work-positions">
 
-    </div> <!-- end -s-pagewrap -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">CBRE</span>
+                                <span class="position__pos">Data Analyst</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="January 2022 - January 2024" data-fr="Janvier 2022 - Janvier 2024">
+                                January 2022 - January 2024
+                            </div>
+                        </div>
+                        <ul>
+                            <li data-en="Reports automation" data-fr="Automatisation de rapports">Reports automation</li>
+                            <li data-en="Dashboards (Tableau & PBI), health and energy sectors" data-fr="Tableaux de bord (PBI & Tableau), secteurs santé et énergie">Dashboards (Tableau & PBI), health and energy sectors</li>
+                            <li data-en="Fact sheets automation" data-fr="Automatisation des fiches d'information">Fact sheets automation</li>
+                            <li data-en="Tableau training for colleagues (from « business » teams)" data-fr="Formation Tableau pour les collègues (des équipes « business »)">Tableau training for colleagues (from « business » teams)</li>
+                        </ul>
+                        <div class="keywords">
+                            <div class="keyword2">Python</div>
+                            <div class="keyword2">Tableau</div>
+                            <div class="keyword2">PBI</div>
+                            <div class="keyword2">PostgreSQL</div>
+                            <div class="keyword2">Word Windward</div>
+                            <div class="keyword2">Confluence</div>
+                            <div class="break"></div>
+                            <div class="keyword2" data-en="Real estate" data-fr="Immobilier">Real Estate</div>
+                            <div class="keyword2" data-en="Investment" data-fr="Investissement">Investment</div>
+                        </div>
+
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Stellantis</span>
+                                <span class="position__pos">Data Analyst</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="October 2019 - September 2021" data-fr="Octobre 2019 - Septembre 2021">
+                                October 2019 - September 2021
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li data-en="Dashboards to follow up KPIs" data-fr="Tableaux de bord pour suivre les indicateurs clés">Dashboards to follow up KPIs</li>
+                            <li data-en="Export to Excel automation" data-fr="Automatisation d'exports Excel">Export to Excel automation</li>
+                            <li data-en="Data exploration" data-fr="Exploration des données">Data exploration</li>
+                            <li data-en="Analysis of the life cycle (of [future] clients) to target the right persons at the right time" data-fr="Analyse du cycle de vie (des [futurs] clients) pour cibler les bonnes personnes au bon moment">Analysis of the life cycle (of [future] clients) to target the right persons at the right time</li>
+                        </ul>
+                        <div class="keywords">
+                            <div class="keyword2">R</div>
+                            <div class="keyword2">PostgreSQL</div>
+                            <div class="keyword2">QlikSense</div>
+                            <div class="break"></div>
+                            <div class="keyword2" data-en="Automotive" data-fr="Automobile">Automotive</div>
+                            <div class="keyword2" data-en="Marketing" data-fr="Marketing">Marketing</div>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">BVA</span>
+                                <span class="position__pos">Data Scientist</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="September 2017 - September 2019" data-fr="Septembre 2017 - Septembre 2019">
+                                September 2017 - September 2019
+                            </div>
+                        </div>
+                        
+                        <ul>
+                            <li data-en="Dashboards to follow up KPIs" data-fr="Tableaux de bord pour suivre les indicateurs clés">Dashboards to follow up KPIs</li>
+                            <li data-en="Export to Excel automation" data-fr="Automatisation d'exports Excel">Export to Excel automation</li>
+                            <li data-en="Data exploration" data-fr="Exploration des données">Data exploration</li>
+                            <li data-en="Analysis of the life cycle (of [future] clients) to target the right persons at the right time" data-fr="Analyse du cycle de vie (des [futurs] clients) pour cibler les bonnes personnes au bon moment">Analysis of the life cycle (of [future] clients) to target the right persons at the right time</li>
+                        </ul>
+                        <div class="keywords">
+                            <div class="keyword2">R</div>
+                            <div class="keyword2">Git</div>
+                            <div class="keyword2">Jenkins</div>
+                            <div class="keyword2">Agile Scrum</div>
+                            <div class="break"></div>
+                            <div class="keyword2" data-en="Telecom" data-fr="Telecom">Telecom</div>
+                            <div class="keyword2" data-en="Energy" data-fr="Energie">Energy</div>
+                            <div class="keyword2" data-en="Transport" data-fr="Transport">Transport</div>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co" data-en="OECD" data-fr="OCDE">OECD</span>
+                                <span class="position__pos" data-en="Statistician" data-fr="Statisticienne">Statistician</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="May 2015 - August 2015" data-fr="Mai 2015 - Août 2015">
+                                May 2015 - August 2015
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li data-en="Verify that the aid for development is correctly used" data-fr="Vérifier que l'aide pour le développement est correctement utilisée">Verify that the aid for development is correctly used</li>
+                        </ul>
+                        <div class="keywords">
+                            <div class="keyword2">Excel</div>
+                            <div class="break"></div>
+                            <div class="keyword2" data-en="Development" data-fr="Développement">Development</div>
+                        </div>
+
+                    </div>
+                </div> <!-- end column -->
+            </div> <!-- work positions -->
+        </div> <!-- end s-about__section -->
+    </section> <!-- end s-about -->
+
+    <!-- formation
+    ================================================== -->
+    <section id="formation" class="s-about target-section">
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up" data-en="Education & Certifications" data-fr="Formation & Certifications">Education & Certifications</h3>
+                </div>
+            </div>
+
+            <div class="row block-large-1-2 block-900-full work-positions">
+                
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Hugging Face</span>
+                                <span class="position__pos">AI Agents Fundamentals</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="February 2025" data-fr="Février 2025">
+                                February 2025
+                            </div>
+
+                        </div>
+
+                        <ul class="hero-social2">
+                            <li>
+                                <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/NoemieR/2025-02-17.png" title="Link to certificate" target="_blank" data-en="Link to certificate" data-fr="Lien vers le certificat">Link to certificate</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
+
+                        <p class="citation" 
+                        data-en="Explain Tools, Thoughts, Actions, Observations, and their formats. Explain LLMs, messages, special tokens and chat templates. Show a simple use case using python functions as tools." 
+                        data-fr="Expliquer les Outils, les Pensées, les Actions, les Observations et leurs formats. Expliquer les LLM, les messages, les jetons spéciaux et les modèles de chat. Montrer un cas d'utilisation simple utilisant les fonctions python comme outils.">
+                        Explain Tools, Thoughts, Actions, Observations, and their formats. Explain LLMs, messages, special tokens and chat templates. Show a simple use case using python functions as tools.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">AWS</span>
+                                <span class="position__pos">AWS Knowledge: Cloud Essentials</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="January 2025" data-fr="Janvier 2025">
+                                January 2025
+                            </div>
+                            <!-- https://www.credly.com/badges/92a61eee-477d-4baa-89d9-b36f106e6716/linked_in_profile -->
+                        </div>
+
+                        <ul class="hero-social2">
+                            <li>
+                                <a href="https://www.credly.com/badges/92a61eee-477d-4baa-89d9-b36f106e6716/linked_in_profile" title="Link to certificate" target="_blank" data-en="Link to certificate" data-fr="Lien vers le certificat">Link to certificate</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
+
+                        <p class="citation"
+                        data-en="Earners of this badge have developed knowledge of foundational AWS Cloud concepts with a focus on AWS Compute, Storage, Networking and Database services, security, architecture, pricing, and support." 
+                        data-fr="Les titulaires de ce badge ont acquis des connaissances sur les concepts fondamentaux du cloud AWS, en particulier sur les services AWS Compute, Storage, Networking et Database, ainsi que sur la sécurité, l'architecture, la tarification et le support.">
+                        Earners of this badge have developed knowledge of foundational AWS Cloud concepts with a focus on AWS Compute, Storage, Networking and Database services, security, architecture, pricing, and support.
+                        </p>
+                        
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">DeepLearning.AI</span>
+                                <span class="position__pos">Deep Learning Specialization</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="January 2025" data-fr="Janvier 2025">
+                                January 2025
+                            </div>
+                        </div>
+                        
+                        <ul class="hero-social2">
+                            <li>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/I3G5M6S2H454" title="Link to certificate" target="_blank" data-en="Link to certificate" data-fr="Lien vers le certificat">Link to certificate</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
+
+                        <p class="citation" 
+                        data-en="In this Specialization, you built neural network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs, Transformers, and learned how to make them better with strategies such as Dropout, BatchNorm, and Xavier/He initialization. You mastered these theoretical concepts, learned their industry applications using Python and TensorFlow, and tackled real-world cases such as speech recognition, music synthesis, chatbots, machine translation, natural language processing, and more. You are now familiar with the capabilities and challenges of deep learning. You are ready to take the definitive step in the world of AI and participate in the development of leading-edge technology."
+                        data-fr="Dans cette spécialisation, vous avez construit des architectures de réseaux neuronaux tels que les réseaux neuronaux convolutifs, les réseaux neuronaux récurrents, les LSTM, les transformateurs, et appris à les améliorer grâce à des stratégies telles que Dropout, BatchNorm, et Xavier/He initialisation. Vous avez maîtrisé ces concepts théoriques, appris leurs applications industrielles en utilisant Python et TensorFlow, et abordé des cas réels tels que la reconnaissance vocale, la synthèse musicale, chatbots, la traduction automatique, le traitement du langage naturel, et plus encore. Vous êtes maintenant familiarisé avec les capacités et les défis de l'apprentissage profond. Vous êtes prêt à franchir une étape décisive dans le monde de l'IA et à participer au développement d'une technologie de pointe.">
+                        In this Specialization, you built neural network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs, Transformers, and learned how to make them better with strategies such as Dropout, BatchNorm, and Xavier/He initialization. You mastered these theoretical concepts, learned their industry applications using Python and TensorFlow, and tackled real-world cases such as speech recognition, music synthesis, chatbots, machine translation, natural language processing, and more. You are now familiar with the capabilities and challenges of deep learning. You are ready to take the definitive step in the world of AI and participate in the development of leading-edge technology.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Toulouse School of Economics</span>
+                                <span class="position__pos" data-en="Master's Degree in Econometrics & Statistics" data-fr="Master en Econométrie & Statistiques">Master's Degree in Econometrics & Statistics</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="May 2018" data-fr="Mai 2018">
+                                May 2018
+                            </div>
+                        </div>
+
+                        <div class="certificate" data-en="Honors" data-fr="Mention bien">
+                            Honors
+                        </div>
+
+                        <p class="citation" 
+                        data-en="The Master Statistics & Econometrics trains students with a deep knowledge of econometrics and/or statistics. It aims at teaching project manager or responsible for statistical and econometrical analysis, data miners, data scientists and statistical ingeniers with basis in economy. This Master aims at giving a solid background in applied statistics and to train to use some softwares. It gives general courses in statistics and econometry and specialized courses in other applied fields but also a training to the use of the main software SAS, R and Python and the database management."
+                        data-fr="Le Master Statistics & Econometrics forme des étudiants ayant une connaissance approfondie de l'économétrie et/ou des statistiques. Il s'adresse aux chefs de projet ou responsables d'analyses statistiques et économétriques, aux data miners, aux data scientists et aux ingénieurs statisticiens ayant des bases en économie. Ce master vise à donner une solide formation en statistiques appliquées et à former à l'utilisation de certains logiciels. Il dispense des cours généraux en statistique et en économétrie et des cours spécialisés dans d'autres domaines appliqués mais aussi une formation à l'utilisation des principaux logiciels SAS, R et Python et à la gestion de bases de données.">
+                        The Master Statistics & Econometrics trains students with a deep knowledge of econometrics and/or statistics. It aims at teaching project manager or responsible for statistical and econometrical analysis, data miners, data scientists and statistical ingeniers with basis in economy. This Master aims at giving a solid background in applied statistics and to train to use some softwares. It gives general courses in statistics and econometry and specialized courses in other applied fields but also a training to the use of the main software SAS, R and Python and the database management.
+                        </p>
+
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co" data-en="University Paul Sabatier" data-fr="Université Paul Sabatier">University Paul Sabatier</span>
+                                <span class="position__pos" data-en="Magistere Economist-Statistician" data-fr="Magistère Economiste-Statisticien">Magistere Economist-Statistician</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="May 2018" data-fr="Mai 2018">
+                                May 2018
+                            </div>
+                        </div>
+
+                        <div class="certificate" data-en="Honors" data-fr="Mention bien">
+                            Honors
+                        </div>
+
+                        <p class="citation" 
+                        data-en="This 3 years degree is an excellent education which associates theoretical education, professional application and research introduction, in economical sciences, mathematics, statistics and IT. It aims as training quantitative economists and data science specialists (data scientists)."
+                        data-fr="Ce diplôme en 3 ans est une formation d'excellence qui associe enseignement théorique, application professionnelle et initiation à la recherche, dans les domaines des sciences économiques, des mathématiques, des statistiques et de l'informatique. Il vise à former des économistes quantitatifs et des spécialistes de la science des données (data scientists).">
+                        This 3 years degree is an excellent education which associates theoretical education, professional application and research introduction, in economical sciences, mathematics, statistics and IT. It aims as training quantitative economists and data science specialists (data scientists).
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Toulouse School of Economics</span>
+                                <span class="position__pos" data-en="Bachelor's Degree in Economy & Mathematics" data-fr="Licence Economie & Mathématiques">Bachelor's Degree in Economy & Mathematics</span>
+                            </h6>
+                            <div class="position__timeframe" data-en="May 2015" data-fr="Mai 2015">
+                                May 2015
+                            </div>
+                        </div>
+
+                        <div class="certificate" data-en="Honors" data-fr="Mention bien">
+                            Honors
+                        </div>
+                        <!-- <div class="hero-social2" data-en="Honors" data-fr="Mention bien">
+                            Honors
+                        </div> -->
+
+                        <p class="citation"
+                        data-en="This bachelor's degree provides students with strong skills in economics and mathematics to help them carry out their studies in both disciplines (pure or applied Mathematics, pure economics or economics and mathematics)."
+                        data-fr="Cette licence permet aux étudiants d'acquérir de solides compétences en économie et en mathématiques pour les aider à mener à bien leurs études dans les deux disciplines (mathématiques pures ou appliquées, économie pure ou économie et mathématiques).">
+                        This bachelor's degree provides students with strong skills in economics and mathematics to help them carry out their studies in both disciplines (pure or applied Mathematics, pure economics or economics and mathematics).
+                        </p>
+                        <!-- <ul class="certificate">
+                            <li>
+                                <a title="Honors" data-en="🎖️Honors" data-fr="🎖️Mention bien">🎖️Honors</a>
+                            </li>
+                        </ul>  -->
+                        
+                        <!-- <div class="certificate">
+                            <img src="certificate_icon.png" class="icon"> Honors
+                        </div>
+                        <div class="certificate">
+                            <img src="certificate_icon.svg" class="icon"> Honors
+                        </div>
+                        <div class="certificate">
+                            <img src="certificate_icon.png" class="icon2"> Honors
+                        </div>
+                        <div class="certificate">
+                            <img src="certificate_icon.svg" class="icon2"> Honors
+                        </div> -->
+                        
+                        
+                    </div>
+                </div> <!-- end column -->
+
+            </div> <!-- work positions -->
+
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Portfolio</h3>
+                    <h1 class="display-1" data-en="A selection of recent projects I have worked on during my free time." data-fr="Une sélection de projets récents sur lesquels j'ai travaillés pendant mon temps libre.">
+                        A selection of recent projects I have worked on during my free time.
+                    </h1>
+                </div>
+            </div>
+        </div> <!-- s-porfolio__header -->
+
+        <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+            <!-- ------------------------------------  -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" Title="Shout and Jump" data-size="1050x700">
+                            <img src="images/portfolio/shout-and-jump.jpg" 
+                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                        </a>
+                    </div>                    
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</div>
+                        <h4 class="folio-item__title" data-en="Image classification" data-fr="Classification d'images">Image classification</h4>
+                    </div>
+                    <a href="https://github.com/-/image_classification" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- ------------------------------------  -->
+            <!-- <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="javascript:void(0);" data-id="1">
+                            <img src="images/portfolio/shout-and-jump.jpg" 
+                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" 
+                                 alt="Shout and Jump" class="clickable-image">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</div>
+                        <h4 class="folio-item__title" data-en="Image classification" data-fr="Classification d'images">Image classification</h4>
+                    </div>
+                    <a href="https://github.com/-/image_classification" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo. Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Modal Popup (Hidden initially) -->
+            <!-- <div id="modal-05" class="modal" style="display: none;">
+                <div class="modal-popup">
+                    <img src="images/portfolio/shout-and-jump.jpg" alt="Shout and Jump">
+                    <div class="modal-popup__desc">
+                        <h5>Shout and Jump</h5>
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                        <ul class="modal-popup__cat">
+                            <li>Computer Vision</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.behance.net/" class="modal-popup__details">Project Link</a>
+                    <button onclick="closeModal()" class="modal-close-btn">Close</button>
+                </div>
+            </div> -->
+            <!-- end modal -->
+
+
+
+
+            
+            <!-- <div>
+                <ul class="folio-list row block-lg-one-half block-stack-on-1000" style="list-style-type: none; padding: 0;">
+                    <li class="folio-list__item column" data-animate-el style="position: relative;">
+                        <a class="folio-list__item-link" href="#modal-01" style="display: block;">
+                            <div class="folio-list__item-pic" style="position: relative;">
+                                <img src="images/portfolio/shout-and-jump.jpg"
+                                     srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                                <div class="folio-list__item-text" style="position: absolute; bottom: 10px; left: 10px; background: rgba(0, 0, 0, 0.5); color: white; padding: 5px 10px;">
+                                    <div class="folio-list__item-cat" data-en="Computer vision" data-fr="Vision par ordinateur" style="font-size: 14px;">Computer vision</div>
+                                    <div class="folio-list__item-title" data-en="Image classification" data-fr="Classification d'images" style="font-size: 16px; font-weight: bold;">Image classification</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="https://github.com/-/image_classification" title="Project Link" target="_blank" style="position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.5); color: white; padding: 5px 10px; border-radius: 50%;">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="modal-01" hidden>
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-shout-jump.jpg" alt="">
+                    <div class="modal-popup__desc">
+                        <h5 data-en="Image classification" data-fr="Classification d'images">Image classification</h5>
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo. Unde dolorem corrupti neque nisi.</p>
+                        <ul class="modal-popup__cat">
+                            <li data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/-/image_classification" class="modal-popup__details">Project Link</a>
+                </div>
+            </div>
+
+            <div>
+                <ul class="folio-list row block-lg-one-half block-stack-on-1000" style="list-style-type: none; padding: 0;">
+                    <li class="folio-list__item column" data-animate-el style="position: relative;">
+                        <a class="folio-list__item-link" href="#modal-01" style="display: block;">
+                            <div class="folio-list__item-pic" style="position: relative;">
+                                <img src="images/portfolio/shout-and-jump.jpg"
+                                     srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                                <div class="folio-list__item-text" style="position: absolute; bottom: 10px; left: 10px; background: rgba(0, 0, 0, 0.5); color: white; padding: 5px 10px;">
+                                    <div class="folio-list__item-cat" data-en="Computer vision" data-fr="Vision par ordinateur" style="font-size: 14px;">Computer vision</div>
+                                    <div class="folio-list__item-title" data-en="Image classification" data-fr="Classification d'images" style="font-size: 16px; font-weight: bold;">Image classification</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="https://github.com/-/image_classification" title="Project Link" target="_blank" style="position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.5); color: white; padding: 5px 10px; border-radius: 50%;">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="modal-01" hidden>
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-shout-jump.jpg" alt="">
+                    <div class="modal-popup__desc">
+                        <h5 data-en="Image classification" data-fr="Classification d'images">Image classification</h5>
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo. Unde dolorem corrupti neque nisi.</p>
+                        <ul class="modal-popup__cat">
+                            <li data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/-/image_classification" class="modal-popup__details">Project Link</a>
+                </div>
+            </div> -->
+            <!-- ------------------------------------  -->
+
+            <!-- <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/projects/segmentation.jpg" title="Building Blocks" data-size="1050x700">
+                            <img src="images/projects/segmentation.jpg" 
+                                 srcset="images/projects/segmentation.jpg 1x, images/projects/segmentation.jpg.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</div>
+                        <h4 class="folio-item__title">Segmentation semantique image</h4>
+                    </div>
+                    <a href="https://github.com/Noemie-Ribaillier/image_segmentation" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" Title="Shout and Jump" data-size="1050x700">
+                            <img src="images/portfolio/shout-and-jump.jpg" 
+                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">Shout & Jump</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div>  -->
+            <!-- <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-sand-dunes.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="images/portfolio/sand-dunes.jpg" 
+                                 srcset="images/portfolio/sand-dunes.jpg 1x, images/portfolio/sand-dunes@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Frontend Design</div>
+                        <h4 class="folio-item__title">Sand Dunes</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="images/portfolio/woodcraft.jpg" 
+                                 srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">Wooocraft</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div>  -->
+            <!-- <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="images/portfolio/lamp.jpg" 
+                                 srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">The Lamp</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" target="_blank" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div>  -->
+        </div> 
+
+    </section> 
+
+
+
+<!-- -------------TEST-------------------------------------------------------------------------------------- -->
+    <!-- <section id="works" class="s-works target-section">
+
+        <div class="row works-portfolio">
+
+            <div class="column lg-12" data-animate-block>
+
+                <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                    <li class="folio-list__item column" data-animate-el>
+                        <a class="folio-list__item-link" href="#modal-01">
+                            <div class="folio-list__item-pic">
+                                <img src="images/portfolio/sand-dunes.jpg"
+                                    srcset="images/portfolio/sand-dunes.jpg 1x, images/portfolio/sand-dunes@2x.jpg 2x"  alt="">
+                            </div>
+                            
+                            <div class="folio-list__item-text">
+                                <div class="folio-list__item-cat">
+                                    Website
+                                </div>
+                                <div class="folio-list__item-title">
+                                    Retro Camera.
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="#" title="project link">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </li> 
+
+                    <li class="folio-list__item column" data-animate-el>
+                        <a class="folio-list__item-link" href="#modal-02">
+                            <div class="folio-list__item-pic">
+                                <img src="images/portfolio/lamp.jpg" 
+                                    srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            </div>
+                            
+                            <div class="folio-list__item-text">
+                                <div class="folio-list__item-cat">
+                                    Product Design
+                                </div>
+                                <div class="folio-list__item-title">
+                                    The White Lamp.
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="#" title="project link">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </li> 
+                    
+                </ul> 
+
+            </div>
+
+            <div id="modal-01" hidden>
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-sand-dunes.jpg" alt="">
+        
+                    <div class="modal-popup__desc">
+                        <h5>Retro Camera</h5>
+                        <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                        <ul class="modal-popup__cat">
+                            <li>Branding</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+        
+                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                </div>
+            </div> 
+
+            <div id="modal-02" hidden>
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
+        
+                    <div class="modal-popup__desc">
+                        <h5>The White Lamp</h5>
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                        <ul class="modal-popup__cat">
+                            <li>Branding</li>
+                        </ul>
+                    </div>
+        
+                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                </div>
+            </div> 
+            
+        </div>
+    </section>  -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- testimonials
+    ================================================== -->
+    <!-- <section id="testimonials" class="s-testimonials">
+
+        <div class="row collapse">
+
+            <div class="column large-full">
+
+                <div class="testimonial-slider" data-aos="fade-up">
+
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                        Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                        Laudantium quia consequatur molestias delectus culpa.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Tim Cook</strong>
+                                <span>CEO, Apple</span>
+                            </cite>
+                        </div>
+                    </div> 
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Sundar Pichai</strong>
+                                <span>CEO, Google</span>
+                            </cite>
+                        </div>
+                    </div> 
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                        Voluptatem dignissimos ut.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Satya Nadella</strong>
+                                <span>CEO, Microsoft</span>
+                            </cite>
+                        </div>
+                    </div> 
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                        Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Jeff Bezos</strong>
+                                <span>CEO, Amazon</span>
+                            </cite>
+                        </div>
+                    </div> 
+
+                </div> 
+                
+            </div> 
+
+        </div>  -->
+
+
+        <!-- CTA
+        ================================================== -->
+        <!-- <div class="s-cta">
+
+            <div class="row">
+                <div class="column large-full">
+                    <h2 class="section-desc" data-aos="fade-up">
+                        Need a great reliable web hosting?
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row cta-content" data-aos="fade-up">
+                <div class="column large-full">
+                    <p>
+                    We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                    Powerful web and Wordpress hosting. Guaranteed.
+                    Starting at $2.95 per month.
+                    </p>
+    
+                    <a href="https://www.dreamhost.com/r.cgi?287326" class="btn btn--primary h-full-width">Get Started</a>
+                </div>
+            </div> 
+    
+        </div> 
+
+
+    </section> -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+        
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <!-- <h1 class="display-1">
+                    Have an idea or a concept that really excite you?
+                    Let's turn that idea into reality. Shoot me a message.
+                    </h1> -->
+                </div>
+
+                <!-- <div class="footer-email-us">
+                    <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                </div> -->
+            </div>
+
+            <!-- <div class="column large-5"> -->
+            <div class="footer-contacts">
+                <div class="footer-contact-block" data-aos="fade-up">
+                    <!-- <h5 class="footer-contact-block__header">
+                        Email
+                    </h5> -->
+                    <h5 class="footer-contact-block__content">
+                        <a href="mailto:noemie.ribaillier@gmail.com">Email</a>
+                    </h5>
+                </div> <!-- end footer-contact-block -->
+                <div class="footer-contact-block" data-aos="fade-up">
+                    <h5 class="footer-contact-block__content">
+                        <a href="https://www.linkedin.com/in/noemie-ribaillier/">LinkedIn</a>
+                    </h5>
+                </div> <!-- end footer-contact-block -->
+                    <!-- <br> -->
+                    <!-- <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Social
+                        </h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a href="#0">Twitter</a></li>
+                            <li><a href="#0">Instagram</a></li>
+                            <li><a href="#0">Behance</a></li>
+                            <li><a href="#0">Dribbble</a></li>
+                        </ul>
+                    </div> -->
+                     <!-- end footer-contact-block -->
+            <!-- </div> -->
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <!-- <span>© Copyright Ethos 2019</span>  -->
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
 
 
     <!-- Java Script
     ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <!-- Language -->
+    <!-- <script>
+        function changeLanguage(lang) {
+          const elements = document.querySelectorAll('[data-en], [data-fr]');
+          elements.forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+            // el.textContent = el.getAttribute(`data-${lang}`);
+          });
+        }
+    </script>
+
+    <script>
+        // Get the current language of the page (defaults to 'en' if not set)
+        const userLang = document.documentElement.lang || navigator.language || 'en';
+    
+        // Get both the English and French links
+        const englishLink = document.querySelector('.english-link');
+        const frenchLink = document.querySelector('.french-link');
+    
+        // Change link text and href based on the language
+        if (userLang.startsWith('fr')) {
+        // If the language is French
+        englishLink.style.display = 'none'; // Hide the English link
+        frenchLink.style.display = 'inline-block'; // Show the French link
+        frenchLink.href = frenchLink.getAttribute('data-fr'); // Ensure French link points to the correct URL
+        } else {
+        // If the language is English (or anything else)
+        frenchLink.style.display = 'none'; // Hide the French link
+        englishLink.style.display = 'inline-block'; // Show the English link
+        englishLink.href = englishLink.getAttribute('data-en'); // Ensure English link points to the correct URL
+        }
+    </script> -->
+
+    <script>
+        // Function to change the language of content dynamically
+        function changeLanguage(lang) {
+          const elements = document.querySelectorAll('[data-en], [data-fr]');
+          elements.forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+          });
+          
+          // Get both the English and French links
+          const englishLink = document.querySelector('.english-link');
+          const frenchLink = document.querySelector('.french-link');
+        
+          // Change link text and href based on the language
+          if (lang === 'fr') {
+            // If the language is French
+            englishLink.style.display = 'none'; // Hide the English link
+            frenchLink.style.display = 'inline-block'; // Show the French link
+            frenchLink.href = frenchLink.getAttribute('data-fr'); // Ensure French link points to the correct URL
+          } else {
+            // If the language is English (or anything else)
+            frenchLink.style.display = 'none'; // Hide the French link
+            englishLink.style.display = 'inline-block'; // Show the English link
+            englishLink.href = englishLink.getAttribute('data-en'); // Ensure English link points to the correct URL
+          }
+        }
+    
+        // Get the current language of the page (defaults to 'en' if not set)
+        const userLang = document.documentElement.lang || navigator.language || 'en';
+        
+        // Initialize language on page load
+        changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
+    </script>
+
+
+    <!-- <script>
+        // Open the modal and show the content
+        function openModal() {
+            document.getElementById('modal-05').style.display = 'block';
+        }
+
+        // Close the modal
+        function closeModal() {
+            document.getElementById('modal-05').style.display = 'none';
+        }
+    </script> -->
 </body>
-</html>
