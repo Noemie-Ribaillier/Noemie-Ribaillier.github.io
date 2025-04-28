@@ -2168,13 +2168,13 @@ input::-moz-focus-inner {
 }
 
 .hero-social2 a {
-  color: #555;
+  color: #f9861a;
 }
 
 .hero-social2 a:hover,
 .hero-social2 a:focus,
 .hero-social2 a:active {
-  color: #f9861a;
+  color: #555;
 }
 
 /* -------------------------------------------------------------------
@@ -2214,7 +2214,7 @@ input::-moz-focus-inner {
   color: #f9861a;
 } */
 
-.icon {
+/* .icon {
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -2222,10 +2222,11 @@ input::-moz-focus-inner {
 }
 
 .icon2 {
-  color: #f9861a; /* You control color here! */
+  color: #f9861a;
   vertical-align: middle;
   margin-right: 8px;
-}
+} */
+
 /* -------------------------------------------------------------------
  * ## hero scroll
  * ------------------------------------------------------------------- */
