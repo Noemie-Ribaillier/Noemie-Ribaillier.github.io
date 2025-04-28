@@ -679,14 +679,7 @@
                             <img src="images/portfolio/shout-and-jump.jpg" 
                                  srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
                         </a>
-                    </div>
-
-                    <!-- <div class="image-container" onclick="toggleText(this)">
-                        <img src="images/portfolio/gallery/g-shout-jump.jpg" alt="Example" class="clickable-image">
-                        <div class="image-text" style="display: none;">This is your text box content!</div>
-                    </div> -->
-
-                    
+                    </div>                    
                     <div class="folio-item__info">
                         <div class="folio-item__cat" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</div>
                         <h4 class="folio-item__title" data-en="Image classification" data-fr="Classification d'images">Image classification</h4>
@@ -702,7 +695,7 @@
                 <div class="folio-item">
                     <div class="folio-item__thumb image-container" onclick="toggleText(this)">
                         <img src="images/portfolio/shout-and-jump.jpg" 
-                             srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="" class="clickable-image">
+                            srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="" class="clickable-image">
             
                         <div class="image-text" style="display: none; margin-top: 10px; font-size: 1.2rem; color: #333;">
                             This is your description or text box!
@@ -1203,14 +1196,14 @@
     </script>
 
     <script>
-    function toggleText(container) {
-        const textBox = container.querySelector('.image-text');
-        if (textBox.style.display === 'none' || textBox.style.display === '') {
-            textBox.style.display = 'block';
-        } else {
-            textBox.style.display = 'none';
+        function toggleText(container) {
+            const textBox = container.querySelector('.image-text');
+            if (textBox.style.display === 'none' || textBox.style.display === '') {
+                textBox.style.display = 'block';
+            } else {
+                textBox.style.display = 'none';
+            }
         }
-    }
     </script>
     <!-- <script>
         function toggleText(container) {
