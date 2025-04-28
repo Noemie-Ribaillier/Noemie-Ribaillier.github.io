@@ -717,10 +717,13 @@
 
         <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
             <!-- ------------------------------------  -->
+
+
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="#" data-modal="modal-01" data-size="1050x700">
+                        <a class="folio-item__thumb-link open-modal" href="#" data-modal="modal-01">
+                            <!-- data-size="1050x700 -->
                             <img src="images/portfolio/shout-and-jump.jpg" 
                                  srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="Shout and Jump">
                         </a>
@@ -733,7 +736,7 @@
                 </div>
             </div>
             
-            <div id="modal-01" class="modal">
+            <div id="modal-01" class="modal" style="display: none;">
                 <div class="modal-popup__desc">
                     <h5 data-en="Image classification" data-fr="Classification d'images">Image classification</h5>
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo. Unde dolorem corrupti neque nisi.</p>
@@ -1383,23 +1386,28 @@
             });
         });
     </script> -->
-    <!-- <script>
+
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Open the modal when the image link is clicked
             document.querySelectorAll('.open-modal').forEach(function (link) {
                 link.addEventListener('click', function (e) {
-                    e.preventDefault(); // stop the link from trying to open #
+                    e.preventDefault(); // Stop lightbox/gallery from trying to open
                     const modalId = link.getAttribute('data-modal');
-                    document.getElementById(modalId).style.display = 'block';
+                    const modal = document.getElementById(modalId);
+                    if (modal) {
+                        modal.style.display = 'block';
+                    }
                 });
             });
-
-            // Close the modal when close button is clicked
+        
             document.querySelectorAll('.modal-close').forEach(function (button) {
                 button.addEventListener('click', function () {
-                    button.closest('.modal').style.display = 'none';
+                    const modal = button.closest('.modal');
+                    if (modal) {
+                        modal.style.display = 'none';
+                    }
                 });
             });
         });
-    </script> -->
+    </script>
 </body>
