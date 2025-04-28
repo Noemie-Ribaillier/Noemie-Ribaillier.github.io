@@ -485,8 +485,14 @@
                             <div class="position__timeframe" data-en="February 2025" data-fr="Février 2025">
                                 February 2025
                             </div>
-                            <!-- https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/NoemieR/2025-02-17.png -->
+
                         </div>
+
+                        <ul class="hero-social2">
+                            <li>
+                                <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/NoemieR/2025-02-17.png" title="Link to certificate" target="_blank" data-en="Link to certificate" data-fr="Lien vers le certificat">Link to certificate</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
 
                         <p class="citation" 
                         data-en="Explain Tools, Thoughts, Actions, Observations, and their formats. Explain LLMs, messages, special tokens and chat templates. Show a simple use case using python functions as tools." 
@@ -534,7 +540,13 @@
                                 January 2025
                             </div>
                         </div>
-                        <!-- https://www.coursera.org/account/accomplishments/specialization/I3G5M6S2H454 -->
+                        
+                        <ul class="hero-social2">
+                            <li>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/I3G5M6S2H454" title="Link to certificate" target="_blank" data-en="Link to certificate" data-fr="Lien vers le certificat">Link to certificate</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
+
                         <p class="citation" 
                         data-en="In this Specialization, you built neural network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs, Transformers, and learned how to make them better with strategies such as Dropout, BatchNorm, and Xavier/He initialization. You mastered these theoretical concepts, learned their industry applications using Python and TensorFlow, and tackled real-world cases such as speech recognition, music synthesis, chatbots, machine translation, natural language processing, and more. You are now familiar with the capabilities and challenges of deep learning. You are ready to take the definitive step in the world of AI and participate in the development of leading-edge technology."
                         data-fr="Dans cette spécialisation, vous avez construit des architectures de réseaux neuronaux tels que les réseaux neuronaux convolutifs, les réseaux neuronaux récurrents, les LSTM, les transformateurs, et appris à les améliorer grâce à des stratégies telles que Dropout, BatchNorm, et Xavier/He initialisation. Vous avez maîtrisé ces concepts théoriques, appris leurs applications industrielles en utilisant Python et TensorFlow, et abordé des cas réels tels que la reconnaissance vocale, la synthèse musicale, chatbots, la traduction automatique, le traitement du langage naturel, et plus encore. Vous êtes maintenant familiarisé avec les capacités et les défis de l'apprentissage profond. Vous êtes prêt à franchir une étape décisive dans le monde de l'IA et à participer au développement d'une technologie de pointe.">
@@ -552,6 +564,10 @@
                             <div class="position__timeframe" data-en="May 2018" data-fr="Mai 2018">
                                 May 2018
                             </div>
+                        </div>
+
+                        <div class="certificate" data-en="Honors" data-fr="Mention bien">
+                            Honors
                         </div>
 
                         <p class="citation" 
@@ -572,6 +588,10 @@
                             <div class="position__timeframe" data-en="May 2018" data-fr="Mai 2018">
                                 May 2018
                             </div>
+                        </div>
+
+                        <div class="certificate" data-en="Honors" data-fr="Mention bien">
+                            Honors
                         </div>
 
                         <p class="citation" 
@@ -597,9 +617,9 @@
                         <div class="certificate" data-en="Honors" data-fr="Mention bien">
                             Honors
                         </div>
-                        <div class="hero-social2" data-en="Honors" data-fr="Mention bien">
+                        <!-- <div class="hero-social2" data-en="Honors" data-fr="Mention bien">
                             Honors
-                        </div>
+                        </div> -->
 
                         <p class="citation"
                         data-en="This bachelor's degree provides students with strong skills in economics and mathematics to help them carry out their studies in both disciplines (pure or applied Mathematics, pure economics or economics and mathematics)."
@@ -1057,25 +1077,5 @@
         changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
     </script>
 
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            const currentPage = window.location.hash; // Get the current hash (e.g., #home)
-            
-            // Find the navbar links (all <a> tags inside .header-nav)
-            const navLinks = document.querySelectorAll('.header-nav a');
-            
-            // Loop through and add the 'active' class to the matching link
-            navLinks.forEach(link => {
-                // Check if the href matches the current hash (use link.hash for this comparison)
-                if (link.hash === currentPage) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        });
 
-    </script>
-
-    
 </body>

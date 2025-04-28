@@ -2163,7 +2163,7 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   margin-left: .4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -2198,7 +2198,7 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   margin-left: .4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
   color: #f9861a;
 }
