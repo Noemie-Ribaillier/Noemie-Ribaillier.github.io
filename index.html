@@ -19,51 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
 
-    <!-- <style>
-        .folio-item__thumb img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .folio-item__info {
-            margin-top: 10px;
-        }
-        .folio-item__project-link {
-            display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #007BFF;
-        }
-        .folio-item__project-link:hover {
-            text-decoration: underline;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            max-width: 500px;
-            width: 100%;
-        }
-        .modal.show {
-            display: block;
-        }
-        .modal-close {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style> -->
+    
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -719,34 +675,7 @@
             <!-- ------------------------------------  -->
 
 
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <div class="folio-item__thumb-link open-modal" data-modal="modal-01">
-                            <!-- data-size="1050x700 -->
-                            <img src="images/portfolio/shout-and-jump.jpg" 
-                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="Shout and Jump">
-                        </div>
-                    </div>                    
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat" data-en="Computer vision" data-fr="Vision par ordinateur">Computer vision</div>
-                        <h4 class="folio-item__title" data-en="Image classification" data-fr="Classification d'images">Image classification</h4>
-                    </div>
-                    <a href="https://github.com/-/image_classification" target="_blank" class="folio-item__project-link">Project Link</a>
-                </div>
-            </div>
-
-
             
-            <div id="modal-01" class="modal" hidden>
-                <div class="modal-popup__desc">
-                    <h5 data-en="Image classification" data-fr="Classification d'images">Image classification</h5>
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo. Unde dolorem corrupti neque nisi.</p>
-                </div>
-                <button class="modal-close">Close</button>
-            </div>
-        </div>
-
                     <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
@@ -1359,57 +1288,4 @@
     </script>
 
 
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const modalLinks = document.querySelectorAll('[data-modal]');
-            const modals = document.querySelectorAll('.modal');
-            const closeButtons = document.querySelectorAll('.modal-close');
-
-            modalLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const modalId = this.getAttribute('data-modal');
-                    document.getElementById(modalId).classList.add('show');
-                });
-            });
-
-            closeButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    this.closest('.modal').classList.remove('show');
-                });
-            });
-
-            window.addEventListener('click', function(event) {
-                modals.forEach(modal => {
-                    if (event.target === modal) {
-                        modal.classList.remove('show');
-                    }
-                });
-            });
-        });
-    </script> -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const modalTriggers = document.querySelectorAll('.open-modal');
-            const modals = document.querySelectorAll('.modal');
-            const closeButtons = document.querySelectorAll('.modal-close');
-
-            modalTriggers.forEach(trigger => {
-                trigger.addEventListener('click', function() {
-                    const modalId = this.getAttribute('data-modal');
-                    const modal = document.getElementById(modalId);
-                    if (modal) {
-                        modal.hidden = false;
-                    }
-                });
-            });
-
-            closeButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    this.closest('.modal').hidden = true;
-                });
-            });
-        });
-    </script>
 </body>
