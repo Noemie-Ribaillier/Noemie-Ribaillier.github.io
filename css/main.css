@@ -3674,6 +3674,36 @@ html.no-csstransitions .hero-content {
 
 /* Basic styles for the modal */
 .modal {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2rem;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  width: 90%;
+  z-index: 1000;
+  border-radius: 8px;
+}
+.modal-popup__desc h5 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.modal-popup__desc p {
+  font-size: 1.8rem;
+}
+.modal-close {
+  margin-top: 1rem;
+  background: #f9861a;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.modal {
   display: none;
   position: fixed;
   top: 0;
