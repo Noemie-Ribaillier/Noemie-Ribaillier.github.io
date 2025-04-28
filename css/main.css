@@ -444,7 +444,8 @@ ul.disc li::before {
   background: #f9861a;
   position: absolute;
   left: -16px;
-  top: 11px;
+  /* change here 11 */
+  top: 0px;
   vertical-align: middle;
 }
 
@@ -2734,6 +2735,8 @@ html.no-csstransitions .hero-content {
   gap: 10px; /* space between keywords */
   /* change here from top to bottom margin-bottom: 20px; */
   margin-bottom: 20px;
+  /* add marge top */
+  margin-top: 0px;
 }
 
 .keyword {
@@ -2766,6 +2769,12 @@ html.no-csstransitions .hero-content {
 /* .keyword2:hover {
   background-color: #d1d1d1;
 } */
+
+.break {
+  flex-basis: 100%; /* take full row */
+  height: 0; /* no visible height */
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
