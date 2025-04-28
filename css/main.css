@@ -2200,11 +2200,12 @@ input::-moz-focus-inner {
   margin-left: .4rem;
   margin-bottom: 0;
   position: relative;
+  color: #f9861a;
 }
 
 .certificate a {
   /* CHANGE HERE #ffffff */
-  color: #f9861a;
+  color: #f91a95;
 }
 
 /* .hero-social a:hover,
