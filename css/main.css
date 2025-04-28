@@ -2577,11 +2577,11 @@ html.no-csstransitions .hero-content {
     padding-bottom: 0;
     min-height: 0;
   }
-/* changed here */
-  /* .s-about__section--profile::before,
+
+  .s-about__section--profile::before,
   .s-about__section--profile .profile-pic {
     display: none;
-  } */
+  }
 
   .position {
     padding-right: 0;
@@ -2760,7 +2760,7 @@ html.no-csstransitions .hero-content {
   font-weight: 600;
   transition: background-color 0.3s ease;
   cursor: default;
-  display: inline-block;
+  display: block;
 }
 
 /* .keyword2:hover {
