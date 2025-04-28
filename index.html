@@ -693,7 +693,8 @@
             <!-- ------------------------------------  -->
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
-                    <div class="folio-item__thumb image-container" onclick="toggleText(this)">
+                    <div class="folio-item__thumb image-container" >
+                        <!-- onclick="toggleText(this)" -->
                         <img src="images/portfolio/shout-and-jump.jpg" 
                             srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="" class="clickable-image">
             
@@ -1195,7 +1196,7 @@
         changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
     </script>
 
-    <script>
+    <!-- <script>
         function toggleText(container) {
             const textBox = container.querySelector('.image-text');
             if (textBox.style.display === 'none' || textBox.style.display === '') {
@@ -1204,7 +1205,7 @@
                 textBox.style.display = 'none';
             }
         }
-    </script>
+    </script> -->
     <!-- <script>
         function toggleText(container) {
         const textBox = container.querySelector('.image-text');
