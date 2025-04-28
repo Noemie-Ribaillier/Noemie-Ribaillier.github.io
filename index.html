@@ -597,6 +597,11 @@
                         data-fr="Cette licence permet aux étudiants d'acquérir de solides compétences en économie et en mathématiques pour les aider à mener à bien leurs études dans les deux disciplines (mathématiques pures ou appliquées, économie pure ou économie et mathématiques).">
                         This bachelor's degree provides students with strong skills in economics and mathematics to help them carry out their studies in both disciplines (pure or applied Mathematics , pure economics or economics and mathematics).
                         </p>
+                        <ul class="hero-social2">
+                            <li>
+                                <a title="Honors" data-en="Honors" data-fr="Mention bien">Honors</a>
+                            </li>
+                        </ul> <!-- end hero-social -->
                     </div>
                 </div> <!-- end column -->
 
@@ -1032,17 +1037,21 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             const currentPage = window.location.hash; // Get the current hash (e.g., #home)
             
-            // Find the navbar links
-            const navLinks = document.querySelectorAll('.header-nav');
+            // Find the navbar links (all <a> tags inside .header-nav)
+            const navLinks = document.querySelectorAll('.header-nav a');
             
             // Loop through and add the 'active' class to the matching link
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
+                // Check if the href matches the current hash (use link.hash for this comparison)
+                if (link.hash === currentPage) {
                     link.classList.add('active');
                 } else {
                     link.classList.remove('active');
                 }
             });
         });
+
     </script>
+
+    
 </body>
