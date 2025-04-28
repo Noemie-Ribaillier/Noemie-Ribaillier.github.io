@@ -3049,7 +3049,8 @@ html.no-csstransitions .hero-content {
 
 .folio-item__thumb a::after {
   z-index: 1;
-  content: "+";
+  /* here changed content: "+"; */
+  content: none;
   font-family: "Gothic A1", sans-serif;
   font-weight: 300;
   font-size: 3rem;
