@@ -1360,23 +1360,12 @@
     </script>
 
 
-    <!-- <script>
-        // Open the modal and show the content
-        function openModal() {
-            document.getElementById('modal-05').style.display = 'block';
-        }
-
-        // Close the modal
-        function closeModal() {
-            document.getElementById('modal-05').style.display = 'none';
-        }
-    </script> -->
-    <!-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const modalLinks = document.querySelectorAll('[data-modal]');
             const modals = document.querySelectorAll('.modal');
             const closeButtons = document.querySelectorAll('.modal-close');
-    
+
             modalLinks.forEach(link => {
                 link.addEventListener('click', function(event) {
                     event.preventDefault();
@@ -1384,20 +1373,21 @@
                     document.getElementById(modalId).classList.add('show');
                 });
             });
-    
+
             closeButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     this.closest('.modal').classList.remove('show');
                 });
             });
-    
-            modals.forEach(modal => {
-                modal.addEventListener('click', function(event) {
-                    if (event.target === this) {
-                        this.classList.remove('show');
+
+            window.addEventListener('click', function(event) {
+                modals.forEach(modal => {
+                    if (event.target === modal) {
+                        modal.classList.remove('show');
                     }
                 });
             });
         });
-    </script> -->
+    </script>
+
 </body>
