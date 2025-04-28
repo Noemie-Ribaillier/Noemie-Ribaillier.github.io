@@ -2406,6 +2406,10 @@ html.no-csstransitions .hero-content {
   .hero-social {
     font-size: 1.1rem;
   }
+/* add this */
+  .hero-social2 {
+    font-size: 1.1rem;
+  }
 
 }
 
@@ -2415,6 +2419,10 @@ html.no-csstransitions .hero-content {
   }
 
   .hero-social {
+    padding-right: 7.2rem;
+  }
+/* add this  */
+  .hero-social2 {
     padding-right: 7.2rem;
   }
 
@@ -2439,6 +2447,10 @@ html.no-csstransitions .hero-content {
   } */
 
   .hero-social {
+    font-size: 1rem;
+  }
+/* add this  */
+  .hero-social2 {
     font-size: 1rem;
   }
 
