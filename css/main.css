@@ -3925,7 +3925,8 @@ html.no-csstransitions .hero-content {
 .folio-list__item-pic::after {
   z-index     : 2;
   display     : block;
-  content     : "+";
+  /*changed here content     : "+"; */
+  content     : none;
   font-family : var(--font-1);
   font-weight : 300;
   font-size   : 2.2rem;
