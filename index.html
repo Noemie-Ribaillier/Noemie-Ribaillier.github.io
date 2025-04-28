@@ -928,7 +928,7 @@
     <script src="js/main.js"></script>
 
     <!-- Language -->
-    <script>
+    <!-- <script>
         function changeLanguage(lang) {
           const elements = document.querySelectorAll('[data-en], [data-fr]');
           elements.forEach(el => {
@@ -958,5 +958,38 @@
         englishLink.style.display = 'inline-block'; // Show the English link
         englishLink.href = englishLink.getAttribute('data-en'); // Ensure English link points to the correct URL
         }
+    </script> -->
+
+    <script>
+        // Function to change the language of content dynamically
+        function changeLanguage(lang) {
+          const elements = document.querySelectorAll('[data-en], [data-fr]');
+          elements.forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+          });
+          
+          // Get both the English and French links
+          const englishLink = document.querySelector('.english-link');
+          const frenchLink = document.querySelector('.french-link');
+        
+          // Change link text and href based on the language
+          if (lang === 'fr') {
+            // If the language is French
+            englishLink.style.display = 'none'; // Hide the English link
+            frenchLink.style.display = 'inline-block'; // Show the French link
+            frenchLink.href = frenchLink.getAttribute('data-fr'); // Ensure French link points to the correct URL
+          } else {
+            // If the language is English (or anything else)
+            frenchLink.style.display = 'none'; // Hide the French link
+            englishLink.style.display = 'inline-block'; // Show the English link
+            englishLink.href = englishLink.getAttribute('data-en'); // Ensure English link points to the correct URL
+          }
+        }
+    
+        // Get the current language of the page (defaults to 'en' if not set)
+        const userLang = document.documentElement.lang || navigator.language || 'en';
+        
+        // Initialize language on page load
+        changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
     </script>
 </body>
