@@ -3433,7 +3433,8 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  padding-top: 24rem;
+  /* change here padding-top: 24rem; */
+  padding-top: 4rem;
   padding-bottom: 8rem;
   background-color: #0b0a15;
   position: relative;
@@ -3621,7 +3622,8 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:800px) {
   .s-footer {
-    padding-top: 20rem;
+    /* change here padding-top: 20rem; */
+    padding-top: 2rem;
   }
 
   .ss-copyright {
