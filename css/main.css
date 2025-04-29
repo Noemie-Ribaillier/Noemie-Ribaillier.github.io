@@ -1512,7 +1512,8 @@ input::-moz-focus-inner {
 
 .section-intro {
   position: relative;
-  margin-bottom: 12rem;
+  /* changed here 12 */
+  margin-bottom: 4rem;
 }
 
 .section-intro .display-1 {
