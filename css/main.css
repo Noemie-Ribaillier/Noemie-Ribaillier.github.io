@@ -2169,7 +2169,7 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   /* change here margin-left: .4rem; */
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin-bottom: 2rem;
   position: relative;
 }
