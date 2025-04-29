@@ -3509,7 +3509,7 @@ html.no-csstransitions .hero-content {
 
 .fake-link {
   color: #f9861a; /* or the original link color */
-  /* text-decoration: underline; */
+  text-decoration: none;
   cursor: default;
 }
 
