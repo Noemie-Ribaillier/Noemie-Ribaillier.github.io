@@ -440,6 +440,8 @@ ul {
 
 ul li {
   padding-left: .4rem;
+  /* added here  */
+  margin-left: 1rem;
 }
 
 ul ul,
