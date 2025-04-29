@@ -1212,30 +1212,32 @@
     </script>
 
 
-    <!-- <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const modalTriggers = document.querySelectorAll('.open-modal');
-        const closeButtons = document.querySelectorAll('.modal-close');
-    
-        modalTriggers.forEach(trigger => {
-            trigger.addEventListener('click', function (e) {
-                e.preventDefault();
-                const modalId = this.getAttribute('href').substring(1);
-                const modal = document.getElementById(modalId);
-                if (modal) {
-                    modal.hidden = false;
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-item');
+
+        const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${entry.target.id}`) {
+                    link.classList.add('active');
                 }
+                });
+            }
             });
+        },
+        {
+            threshold: 0.6  // Adjust based on how much of section should be visible
+        }
+        );
+
+        sections.forEach(section => {
+        observer.observe(section);
         });
+    </script>
     
-        closeButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const modal = button.closest('.modal');
-                if (modal) {
-                    modal.hidden = true;
-                }
-            });
-        });
-    });
-    </script> -->
+
 </body>
