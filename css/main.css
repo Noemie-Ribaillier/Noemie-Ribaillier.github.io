@@ -2120,7 +2120,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .5em;
   margin-top: 8rem;
-  margin-left: .4rem;
+  /* changed here margin-left: .4rem; */
+  margin-left: -0.4rem;
   margin-bottom: 0;
   position: relative;
 }
@@ -2169,7 +2170,7 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   /* change here margin-left: .4rem; */
-  margin-left: -0.40rem;
+  margin-left: -0.4rem;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -2204,7 +2205,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .5em;
   margin-top: 0rem;
-  margin-left: .4rem;
+  /* added here margin-left: .4rem; */
+  margin-left: -0.4rem;
   margin-bottom: 2rem;
   position: relative;
   color: #f9861a;
