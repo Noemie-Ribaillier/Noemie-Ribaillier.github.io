@@ -1748,7 +1748,7 @@ input::-moz-focus-inner {
 }
 
 /* added this  */
-.header-nav .active {
+.header-nav.active {
   /* font-weight: bold;        */
   /* Make it bold */
   color: #ffffff;          /* Change text color */
