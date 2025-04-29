@@ -3515,7 +3515,7 @@ html.no-csstransitions .hero-content {
 
 .fake-link:hover {
   text-decoration: underline;
-  color: #ffffff; /* or hover color */
+  color: #f10909; /* or hover color */
 }
 
 /* ------------------------------------------------------------------- 
