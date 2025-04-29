@@ -2168,7 +2168,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .5em;
   margin-top: 0rem;
-  margin-left: .4rem;
+  /* change here margin-left: .4rem; */
+  margin-left: 1rem;
   margin-bottom: 2rem;
   position: relative;
 }
