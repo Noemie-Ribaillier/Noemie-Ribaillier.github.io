@@ -3471,6 +3471,7 @@ html.no-csstransitions .hero-content {
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.2;
+  text-align:"center";
 }
 
 .footer-contact-block a {
