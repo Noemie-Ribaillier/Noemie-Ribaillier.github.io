@@ -1556,7 +1556,8 @@ input::-moz-focus-inner {
 
 .right-vert-line {
   width: 2px;
-  height: 20rem;
+  /* change here height: 20rem; */
+  height: 2rem;
   background-color: #302c59;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
