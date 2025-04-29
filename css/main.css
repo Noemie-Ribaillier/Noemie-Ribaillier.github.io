@@ -3507,8 +3507,8 @@ html.no-csstransitions .hero-content {
 
 .fake-link {
   color: #f9861a; /* or the original link color */
-  text-decoration: underline;
-  cursor: pointer;
+  /* text-decoration: underline; */
+  cursor: default;
 }
 
 .fake-link:hover {
