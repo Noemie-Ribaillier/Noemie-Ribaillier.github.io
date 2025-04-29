@@ -441,7 +441,7 @@ ul {
 ul li {
   padding-left: .4rem;
   /* added here  */
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 ul ul,
@@ -3513,10 +3513,10 @@ html.no-csstransitions .hero-content {
   cursor: default;
 }
 
-.fake-link:hover {
+/* .fake-link:hover {
   text-decoration: underline;
-  color: #f10909; /* or hover color */
-}
+  color: #f10909; 
+} */
 
 /* ------------------------------------------------------------------- 
  * ## copyright
