@@ -3504,6 +3504,18 @@ html.no-csstransitions .hero-content {
   margin: 0;
 }
 
+
+.fake-link {
+  color: #f9861a; /* or the original link color */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fake-link:hover {
+  text-decoration: underline;
+  color: #ffffff; /* or hover color */
+}
+
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
