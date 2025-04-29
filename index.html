@@ -77,10 +77,12 @@
 
             <!-- <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV">Download my CV</a> -->
             <!-- English link -->
-            <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="english-link">Download my CV</a>
+            <!-- <a href="https://github.com/-/-.github.io/raw/main/.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="english-link">Download my CV</a> -->
+            
+            <a href="#" class="btn btn--stroke btn--small english-link"data-en="Download my CV"data-fr="Téléchargez mon CV"data-href-en="https://example.com/cv-en.pdf">Download my CV</a>
             <!-- French link -->
-            <a href="https://github.com/noemie-ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_FR.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="french-link">Download my CV</a>
-
+            <!-- <a href="https://github.com/-/-.github.io/raw/main/.pdf" class="btn btn--stroke btn--small" data-en="Download my CV" data-fr="Téléchargez mon CV" class="french-link">Download my CV</a> -->
+            <a href="#" class="btn btn--stroke btn--small french-link" data-en="Download my CV" data-fr="Téléchargez mon CV" data-href-fr="https://example.com/cv-fr.pdf"> Téléchargez mon CV</a>
         </div> <!-- end header-content -->
 
         <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
@@ -1160,40 +1162,32 @@
     </script> -->
 
     <script>
-        // Function to change the language of content dynamically
         function changeLanguage(lang) {
-          const elements = document.querySelectorAll('[data-en], [data-fr]');
-          elements.forEach(el => {
+        const elements = document.querySelectorAll('[data-en], [data-fr]');
+        elements.forEach(el => {
             el.innerHTML = el.getAttribute(`data-${lang}`);
-          });
-          
-          // Get both the English and French links
-          const englishLink = document.querySelector('.english-link');
-          const frenchLink = document.querySelector('.french-link');
-        
-          // Change link text and href based on the language
-          if (lang === 'fr') {
-            // If the language is French
-            englishLink.style.display = 'none'; // Hide the English link
-            frenchLink.style.display = 'inline-block'; // Show the French link
-            frenchLink.href = frenchLink.getAttribute('data-fr'); // Ensure French link points to the correct URL
-          } else {
-            // If the language is English (or anything else)
-            frenchLink.style.display = 'none'; // Hide the French link
-            englishLink.style.display = 'inline-block'; // Show the English link
-            englishLink.href = englishLink.getAttribute('data-en'); // Ensure English link points to the correct URL
-          }
+        });
+
+        const englishLink = document.querySelector('.english-link');
+        const frenchLink = document.querySelector('.french-link');
+
+        if (lang === 'fr') {
+            englishLink.style.display = 'none';
+            frenchLink.style.display = 'inline-block';
+            frenchLink.href = frenchLink.getAttribute('data-href-fr');
+        } else {
+            frenchLink.style.display = 'none';
+            englishLink.style.display = 'inline-block';
+            englishLink.href = englishLink.getAttribute('data-href-en');
         }
-    
-        // Get the current language of the page (defaults to 'en' if not set)
+        }
+
         const userLang = document.documentElement.lang || navigator.language || 'en';
-        
-        // Initialize language on page load
         changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
     </script>
 
 
-    <script>
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
         const modalTriggers = document.querySelectorAll('.open-modal');
         const closeButtons = document.querySelectorAll('.modal-close');
@@ -1218,5 +1212,5 @@
             });
         });
     });
-    </script>
+    </script> -->
 </body>
