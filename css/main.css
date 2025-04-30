@@ -2119,7 +2119,8 @@ input::-moz-focus-inner {
   line-height: 3.2rem;
   text-transform: uppercase;
   letter-spacing: .5em;
-  margin-top: 8rem;
+  /* changed here margin-top: 8rem; */
+  margin-top: 2rem;
   /* changed here margin-left: .4rem; */
   margin-left: 0rem;
   margin-bottom: 0;
@@ -2177,7 +2178,7 @@ input::-moz-focus-inner {
 
 .hero-social2 a {
   /* colorgb(249, 26, 26)61a; */
-  color: #34f91a;
+  color: #f9861a;
   margin-left: -0.4rem;
 }
 
