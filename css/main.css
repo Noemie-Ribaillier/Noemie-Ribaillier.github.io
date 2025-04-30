@@ -1939,18 +1939,18 @@ input::-moz-focus-inner {
     top: -2rem;
     left: 0;
   }
-  .header-content .btn {
-    display: none;
-  }
-  /* changed this */
   /* .header-content .btn {
+    display: none;
+  } */
+  /* changed this */
+  .header-content .btn {
     margin-top: 4.8rem;
     -webkit-transform: translate3d(0, -2rem, 0);
     transform: translate3d(0, -2rem, 0);
     opacity: 0;
     visibility: hidden;
     position: static;
-  } */
+  }
 
   .header-nav-wrap {
     padding: 0;
