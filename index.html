@@ -1111,14 +1111,14 @@
         }
         }
 
-        // const userLang = navigator.language || navigator.userLanguage || 'en';
-        // if (userLang.startsWith('fr')) {
-        //     changeLanguage('fr');
-        // } else if (userLang.startsWith('es')) {
-        //     changeLanguage('es');
-        // } else {
-        //     changeLanguage('en');
-        // }
+        const userLang = navigator.language || navigator.userLanguage || 'en';
+        if (userLang.startsWith('fr')) {
+            changeLanguage('fr');
+        } else if (userLang.startsWith('es')) {
+            changeLanguage('es');
+        } else {
+            changeLanguage('en');
+        }
     </script>
 
 
