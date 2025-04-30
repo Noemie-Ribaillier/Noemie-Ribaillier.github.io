@@ -1782,7 +1782,7 @@ input::-moz-focus-inner {
   display: none;
   height: 4.2rem;
   /* changed here width: 4.2rem; */
-  width: 7rem;
+  width: 4.2rem;
   line-height: 4.2rem;
   font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
