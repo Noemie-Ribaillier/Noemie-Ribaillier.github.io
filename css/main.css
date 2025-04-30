@@ -2176,7 +2176,8 @@ input::-moz-focus-inner {
 }
 
 .hero-social2 a {
-  color: #f9861a;
+  /* colorgb(249, 26, 26)61a; */
+  color: #f91a1a;
   margin-left: -0.7rem;
 }
 
