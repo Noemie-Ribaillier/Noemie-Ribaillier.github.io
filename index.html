@@ -1074,33 +1074,47 @@
     <script src="js/main.js"></script>
 
     <!-- Language change per selection of the flag -->
-    <!-- <script>
+    <script>
         function changeLanguage(lang) {
-        const elements = document.querySelectorAll('[data-en], [data-fr]');
+        const elements = document.querySelectorAll('[data-en], [data-fr], [data-es]');
         elements.forEach(el => {
             el.innerHTML = el.getAttribute(`data-${lang}`);
         });
 
         const englishLink = document.querySelector('.english-link');
         const frenchLink = document.querySelector('.french-link');
+        const spanishLink = document.querySelector('.spanish-link');
 
+        // Reset all links
+        englishLink.style.display = 'none';
+        frenchLink.style.display = 'none';
+        spanishLink.style.display = 'none';
+
+        // Show and update the active language link
         if (lang === 'fr') {
-            englishLink.style.display = 'none';
             frenchLink.style.display = 'inline-block';
             frenchLink.href = frenchLink.getAttribute('data-href-fr');
+        } else if (lang === 'es') {
+            spanishLink.style.display = 'inline-block';
+            spanishLink.href = spanishLink.getAttribute('data-href-es');
         } else {
-            frenchLink.style.display = 'none';
             englishLink.style.display = 'inline-block';
             englishLink.href = englishLink.getAttribute('data-href-en');
         }
         }
 
-        const userLang = document.documentElement.lang || navigator.language || 'en';
-        changeLanguage(userLang.startsWith('fr') ? 'fr' : 'en');
+        const userLang = navigator.language || navigator.userLanguage || 'en';
+        if (userLang.startsWith('fr')) {
+            changeLanguage('fr');
+        } else if (userLang.startsWith('es')) {
+            changeLanguage('es');
+        } else {
+            changeLanguage('en');
+        }
     </script>
 
 
-    <script>
+    <!-- <script>
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-item');
 
