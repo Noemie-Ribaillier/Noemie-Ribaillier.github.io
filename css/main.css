@@ -2170,15 +2170,15 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   /* change here margin-left: .4rem; */
-  margin-left: -0.7rem;
+  margin-left: -0.5rem;
   margin-bottom: 2rem;
   position: relative;
 }
 
 .hero-social2 a {
   /* colorgb(249, 26, 26)61a; */
-  color: #f91a1a;
-  margin-left: -0.7rem;
+  color: #431af9;
+  margin-left: -0.5rem;
 }
 
 .hero-social2 a:hover,
