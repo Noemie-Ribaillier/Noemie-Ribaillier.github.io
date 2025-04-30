@@ -1781,7 +1781,8 @@ input::-moz-focus-inner {
   z-index: 101;
   display: none;
   height: 4.2rem;
-  width: 4.2rem;
+  /* changed here width: 4.2rem; */
+  width: 7rem;
   line-height: 4.2rem;
   font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
@@ -1793,7 +1794,7 @@ input::-moz-focus-inner {
   transition: all .3s;
   position: absolute;
   /* changed right: 5.2rem; */
-  right: 7rem;
+  right: 3rem;
   top: 1.6rem;
 }
 
