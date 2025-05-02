@@ -204,6 +204,56 @@ Modifier
         .close-button:hover {
           color: #000;
         }
+
+        .card-container {
+            perspective: 1000px;
+            width: 300px;
+        }
+
+        .card {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            cursor: pointer;
+        }
+
+        .card.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-front img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     
         @keyframes fadeIn {
           from { opacity: 0; transform: scale(0.95); }
@@ -1256,6 +1306,30 @@ Modifier
     </section>
 
     <!-- TEST -->
+    <section id="portfolio2" class="s-about target-section">
+
+        <div class="image-grid">
+
+            <div class="card-container" onclick="this.querySelector('.card').classList.toggle('is-flipped')">
+                <div class="card">
+                <!-- Front -->
+                <div class="card-side card-front">
+                    <img src="images/projects/segmentation.jpg" alt="Project Image">
+                    <h3>Image Segmentation</h3>
+                    <p>Deep Learning / CV</p>
+                    <a href="https://github.com/Noemie-Ribaillier/image_classification" target="_blank">View Project</a>
+                </div>
+                
+                <!-- Back -->
+                <div class="card-side card-back">
+                    <p>This project explores semantic segmentation using a UNet architecture on a medical imaging dataset.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="portfolio2" class="s-about target-section">
 
         <div class="image-grid">
