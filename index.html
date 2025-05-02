@@ -168,7 +168,7 @@ Modifier
             font-weight: 600;
             transition: background-color 0.3s ease;
             cursor: default;
-            display: block;
+            display: inline-block;
         }
     
         .close-button {
@@ -1394,17 +1394,12 @@ Modifier
     </script>
 
 
-    <!-- <script>
-        function toggleDescription(card) {
-        const desc = card.querySelector('.description');
-        desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
-        }
-    </script> -->
+
     <script>
         function openModal(title, description, tags = []) {
             document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalDescription').textContent = description;
-        //   document.getElementById('modalImage').src = imageUrl;
+            document.getElementById('modalDescription').innerHTML = description;
+            // document.getElementById("modal-description").innerHTML = description;
             const tagContainer = document.getElementById('modalTags');
             tagContainer.innerHTML = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
             document.getElementById('imageModal').style.display = 'flex';
