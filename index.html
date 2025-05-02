@@ -29,6 +29,7 @@
           width: 100%;
           cursor: pointer;
           transition: transform 0.2s;
+          text-align: center;
         }
     
         .image-card:hover {
@@ -1461,14 +1462,5 @@
     </script>
 
 
-    document.addEventListener('click', function (event) {
-    const modal = document.getElementById('imageModal');
-    const content = document.querySelector('.modal-content');
-  
-    // If modal is open AND click is outside the modal-content
-    if (modal.style.display === 'flex' && !content.contains(event.target)) {
-      closeModal();
-    }
-  });
 
 </body>
