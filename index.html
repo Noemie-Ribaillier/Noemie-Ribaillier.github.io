@@ -6,6 +6,78 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>Portfolio - Noémie Ribaillier</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 40px;
+          background: #f5f5f5;
+        }
+    
+        .image-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        }
+    
+        .image-card {
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          max-width: 300px;
+          width: 100%;
+          cursor: pointer;
+          transition: transform 0.2s;
+        }
+    
+        .image-card:hover {
+          transform: scale(1.02);
+        }
+    
+        .image-card img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+    
+        .card-content {
+          padding: 15px;
+        }
+    
+        .card-title {
+          font-size: 1.2em;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+    
+        .card-subtitle {
+          font-size: 0.95em;
+          color: #666;
+          margin-bottom: 10px;
+        }
+    
+        .card-link {
+          color: #007bff;
+          text-decoration: none;
+          font-size: 0.9em;
+        }
+    
+        .description {
+          display: none;
+          padding: 10px 15px;
+          font-size: 0.9em;
+          background-color: #f0f0f0;
+          border-top: 1px solid #ddd;
+        }
+    
+        @media (max-width: 768px) {
+          .image-grid {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+    </style>
     <meta name="description" content="">
     <meta name="author" content="Noémie Ribaillier">
 
@@ -71,6 +143,18 @@
             <a href="#" class="btn btn--stroke btn--small french-link" data-en="Download my CV" data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-fr="https://github.com/Noemie-Ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_FR.pdf">Télécharger mon CV</a>
             <a href="#" class="btn btn--stroke btn--small spanish-link" data-en="Download my CV" data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-es="https://github.com/Noemie-Ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ESP.pdf">Descargar mi CV</a>
         </div>
+
+
+        <!-- <a href="#" class="btn btn--stroke btn--small spanish-link" data-en="Download my CV" data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-es="https://github.com/Noemie-Ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ESP.pdf">Descargar mi CV</a>
+
+        <a href="CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small english-link"data-en="Download my CV"
+        data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-en="CV_Ribaillier_Noemie_ENG.pdf" 
+        download target="_blank">Download my CV</a>
+
+
+        <a href="cv.pdf" download>
+            <button style="padding: 10px 20px; font-size: 16px;">📄 Download CV</button>
+          </a> -->
 
         <!-- Menu  -->
         <a class="header-menu-toggle" href="#0" data-en="Menu" data-fr="Menu" data-es="Menú"><span>Menu</span></a>
@@ -990,6 +1074,54 @@
         </div>
     </section>
 
+    <!-- TEST -->
+    <div class="image-grid">
+        <div class="image-card" onclick="toggleDescription(this)">
+          <img src="https://via.placeholder.com/300x200" alt="Image 1">
+          <div class="card-content">
+            <div class="card-title">Image Title 1</div>
+            <div class="card-subtitle">Subtitle 1</div>
+            <a href="#" class="card-link">Learn more</a>
+          </div>
+          <div class="description">
+            This is the description for image 1. It appears when the image is clicked.
+          </div>
+        </div>
+    
+        <div class="image-card" onclick="toggleDescription(this)">
+          <img src="https://via.placeholder.com/300x200" alt="Image 2">
+          <div class="card-content">
+            <div class="card-title">Image Title 2</div>
+            <div class="card-subtitle">Subtitle 2</div>
+            <a href="#" class="card-link">Learn more</a>
+          </div>
+          <div class="description">
+            Description for image 2. You can add more text or even HTML here.
+          </div>
+        </div>
+    
+        <div class="image-card" onclick="toggleDescription(this)">
+          <img src="https://via.placeholder.com/300x200" alt="Image 3">
+          <div class="card-content">
+            <div class="card-title">Image Title 3</div>
+            <div class="card-subtitle">Subtitle 3</div>
+            <a href="#" class="card-link">Learn more</a>
+          </div>
+          <div class="description">
+            This is the hidden content for image 3, shown when clicked.
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- ### contact -->
     <section id="contact" class="s-contact target-section">
@@ -1138,5 +1270,14 @@
             changeLanguage('en');
         }
     </script>
+
+
+    <script>
+        function toggleDescription(card) {
+        const desc = card.querySelector('.description');
+        desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
 
 </body>
