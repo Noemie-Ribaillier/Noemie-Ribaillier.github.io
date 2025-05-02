@@ -3481,6 +3481,7 @@ html.no-csstransitions .hero-content {
 /* ------------------------------------------------------------------- 
  * ## contact block
  * ------------------------------------------------------------------- */
+
 .footer-contact-block {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
@@ -3529,6 +3530,21 @@ html.no-csstransitions .hero-content {
   text-decoration: underline;
   color: #f10909; 
 } */
+
+
+
+.footer-contact-block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* space between icon and text */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -4px; /* slight lift if you want it closer to text */
+}
 
 /* ------------------------------------------------------------------- 
  * ## copyright
