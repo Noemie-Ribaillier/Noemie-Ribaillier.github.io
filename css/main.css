@@ -3738,7 +3738,8 @@ html.no-csstransitions .hero-content {
   cursor: pointer;
 }
 
-.modal {
+/* added this */
+/* .modal {
   display: none;
   position: fixed;
   top: 0;
@@ -3796,7 +3797,7 @@ html.no-csstransitions .hero-content {
 
 .modal-close-btn:hover {
   background-color: #d9770e;
-}
+} */
 
  /* @media screen and (max-width: 800px) {
   .s-works {
