@@ -152,13 +152,23 @@ Modifier
         }
 
         .tag {
-            display: inline-block;
+            /* display: inline-block;
             background-color: #eee;
             color: #333;
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 0.8rem;
-            margin: 2px;
+            margin: 2px; */
+
+            background-color: #333;
+            color: #e0e0e0 ;
+            font-size: 1.2rem;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            cursor: default;
+            display: block;
         }
     
         .close-button {
@@ -1224,7 +1234,7 @@ Modifier
           <span class="close-button" onclick="closeModal()">&times;</span>
           <h2 id="modalTitle" class="modal-title"></h2>
           <p id="modalDescription" class="modal-description"></p>
-          <div id="modalTags" class="keyword2"></div>
+          <div id="modalTags" class="tags"></div>
         </div>
     </div>
 
