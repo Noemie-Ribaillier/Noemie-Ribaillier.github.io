@@ -1245,6 +1245,16 @@
                 <a href="https://github.com/Noemie-Ribaillier/neural_transfer" target="_blank" class="card-link">Link to the project</a>
             </div>
             </div>
+
+            <div id="imageModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h2 id="modalTitle"></h2>
+                  <p id="modalDescription"></p>
+                  <!-- <img id="modalImage" src="" alt="" style="max-width: 100%;"> -->
+                </div>
+            </div>
+
         </div>
         
         <!-- Modal -->
@@ -1433,12 +1443,33 @@
         }
     
         // Optional: close modal when clicking outside of content
-        window.onclick = function(event) {
-          const modal = document.getElementById('imageModal');
-          if (event.target === modal) {
+        // window.onclick = function(event) {
+        //   const modal = document.getElementById('imageModal');
+        //   if (event.target === modal) {
+        //     closeModal();
+        //   }
+        // };
+
+        document.addEventListener('click', function (event) {
+            const modal = document.getElementById('imageModal');
+            const content = document.querySelector('.modal-content');
+        
+            // If modal is open AND click is outside the modal-content
+            if (modal.style.display === 'flex' && !content.contains(event.target)) {
             closeModal();
-          }
-        };
+            }
+        })
     </script>
+
+
+    document.addEventListener('click', function (event) {
+    const modal = document.getElementById('imageModal');
+    const content = document.querySelector('.modal-content');
+  
+    // If modal is open AND click is outside the modal-content
+    if (modal.style.display === 'flex' && !content.contains(event.target)) {
+      closeModal();
+    }
+  });
 
 </body>
