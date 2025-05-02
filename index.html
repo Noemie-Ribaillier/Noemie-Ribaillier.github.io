@@ -64,7 +64,7 @@
         }
     
         /* Modal styles */
-        .modal {
+        /* .modal {
           display: none;
           position: fixed;
           z-index: 999;
@@ -76,7 +76,24 @@
           background-color: rgba(0, 0, 0, 0.6);
           justify-content: center;
           align-items: center;
-        }
+        } */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+
+            /* This is crucial to centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
     
         .modal-content {
           background-color: #fff;
