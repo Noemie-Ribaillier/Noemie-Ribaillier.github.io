@@ -3543,7 +3543,7 @@ html.no-csstransitions .hero-content {
 .icon {
   width: 20px;
   height: 20px;
-  margin-bottom: -4px; /* slight lift if you want it closer to text */
+  margin-bottom: -20px; /* slight lift if you want it closer to text */
 }
 
 /* ------------------------------------------------------------------- 
