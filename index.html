@@ -78,7 +78,7 @@
           align-items: center;
         } */
 
-        .modal {
+        /* .modal {
             display: none;
             position: fixed;
             z-index: 999;
@@ -89,24 +89,52 @@
             overflow: auto;
             background-color: rgba(255, 0, 140, 0.6);
 
-            /* This is crucial to centering */
             display: flex;
             justify-content: center;
             align-items: center;
-            }
+            } */
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            z-index: 999;
+            overflow: auto;
+        }
     
-        .modal-content {
+        /* .modal-content {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             max-width: 600px;
             width: 90%;
             box-shadow: 0 5px 15px rgba(245, 0, 0, 0.637);
-            /* rgba(0, 0, 0, 0.3) */
             text-align: center;
             position: relative;
             animation: fadeIn 0.3s ease;
             display: flex;
+        } */
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;       /* Limits size */
+            width: 90%;             /* Scales for small screens */
+            box-sizing: border-box; /* Prevent overflow */
+            text-align: center;
+            position: relative;
+            float: none;             /* If needed */
+            margin: 0 auto;          /* Optional centering */
         }
     
         .modal-content img {
@@ -1388,7 +1416,7 @@
           document.getElementById('modalTitle').textContent = title;
           document.getElementById('modalDescription').textContent = description;
         //   document.getElementById('modalImage').src = imageUrl;
-        //   document.getElementById('imageModal').style.display = 'flex';
+          document.getElementById('imageModal').style.display = 'flex';
         }
     
         function closeModal() {
