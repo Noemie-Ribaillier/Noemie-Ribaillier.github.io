@@ -1226,25 +1226,16 @@
     <section id="portfolio2" class="s-about target-section">
 
         <div class="image-grid">
-            <!-- <div class="image-card" onclick="openModal('Image classification', 'This is the description for image 1.')">
+            <div class="image-card" onclick="openModal('Image classification', 'This is the description for image 1.')">
             <img src="images/projects/segmentation.jpg" alt="Image 1">
             <div class="card-content">
                 <div class="card-title">Computer vision</div>
                 <div class="card-subtitle">Image classification</div>
                 <a href="https://github.com/Noemie-Ribaillier/image_classification" target="_blank" class="card-link">Link to the project</a>
             </div>
-            </div> -->
-
-            <div id="imageModal" class="modal" style="display: none;">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  <h2 id="modalTitle"></h2>
-                  <p id="modalDescription"></p>
-                  <div id="modalTags" class="tags"></div>
-                  <!-- Optional image -->
-                  <!-- <img id="modalImage" src="" alt="" style="max-width: 100%;"> -->
-                </div>
             </div>
+
+            
         
             <!-- <div class="image-card" onclick="openModal('Semantic image segmentation', 'This is the description for image 2.')">
             <img src="images/projects/segmentation.jpg" alt="Image 2">
@@ -1448,17 +1439,23 @@
         }
     </script> -->
     <script>
-        function openModal(title, description, imageUrl) {
-          document.getElementById('modalTitle').textContent = title;
-          document.getElementById('modalDescription').textContent = description;
+        function openModal(title, description, tags = []) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
         //   document.getElementById('modalImage').src = imageUrl;
-          document.getElementById('imageModal').style.display = 'flex';
+            const tagContainer = document.getElementById('modalTags');
+            tagContainer.innerHTML = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+            document.getElementById('imageModal').style.display = 'flex';
         }
     
         function closeModal() {
           document.getElementById('imageModal').style.display = 'none';
         }
     
+
+    
+  
+
         // Optional: close modal when clicking outside of content
         // window.onclick = function(event) {
         //   const modal = document.getElementById('imageModal');
