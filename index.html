@@ -7,11 +7,11 @@
     <meta charset="utf-8">
     <title>Portfolio - Noémie Ribaillier</title>
     <style>
-        body {
+        /* body {
           font-family: Arial, sans-serif;
           margin: 40px;
           background: #f5f5f5;
-        }
+        } */
     
         .image-grid {
           display: flex;
@@ -63,7 +63,7 @@
             font-weight: bold;
             text-align: left;
             margin-left: 0;
-            color:green;
+            color:#0b0a15;
         }
     
         .card-subtitle {
@@ -1209,13 +1209,26 @@ Modifier
     <!-- TEST -->
     <section id="portfolio2" class="s-about target-section">
 
+
+
+                        <!-- data-en="This project aims at learning about neural style transfer. Neural style transfer (NST) aims at generating an image (G) from a content image (C) and a style image (S). It creates a new image by applying the style of the image S to the content of the image C. We use an optimization process that helps the generated image to gradually mix content from the content image and style from the style image to minimize the total loss function." 
+                        data-fr="Le transfert de style neuronal (NST) vise à générer une image (G) à partir d'une image de contenu (C) et d'une image de style (S). Il crée une nouvelle image en appliquant le style de l'image S au contenu de l'image C. Utilisation d'un processus d'optimisation qui aide l'image générée à mélanger progressivement le contenu de l'image C et le style de l'image S afin de minimiser la fonction de perte totale.">
+                        Le transfert de style neuronal (NST) vise à générer une image (G) à partir d'une image de contenu (C) et d'une image de style (S). Il crée une nouvelle image en appliquant le style de l'image S au contenu de l'image C. Utilisation d'un processus d'optimisation qui aide l'image générée à mélanger progressivement le contenu de l'image C et le style de l'image S afin de minimiser la fonction de perte totale. -->
+         
+
+
         <div class="image-grid">
             <div class="image-card" onclick="openModal('Image classification', 'This is the description for image 1.',['tag1','tag2'])">
             <img src="images/projects/segmentation.jpg" alt="Image 1">
             <div class="card-content">
-                <div class="card-title">Computer vision</div>
-                <div class="card-subtitle">Image classification</div>
-                <a href="https://github.com/Noemie-Ribaillier/image_classification" target="_blank" class="card-link">Link to the project</a>
+                <!-- <div class="card-title">Computer vision</div> -->
+                <div class="position__co" data-en="Computer vision" data-fr="Vision par ordinateur">Vision par ordinateur</div>
+                <!-- <span class="position__pos" data-en="Neural Style Transfer" data-fr="Transfert de style (NST)">Transfert de style (NST)</span> -->
+                <div class="card-position__pos" data-en="Image classification" data-fr="Classification d'images">Classification d'images</div>
+                <!-- <a href="https://github.com/Noemie-Ribaillier/image_classification" target="_blank" class="card-link">Link to the project</a> -->
+                <ul class="hero-social2">
+                    <a href="https://github.com/Noemie-Ribaillier/image_classification" target="_blank" data-en="Link to project" data-fr="Lien vers le projet">Lien vers le projet</a>
+                </ul>
             </div>
             </div>
 
