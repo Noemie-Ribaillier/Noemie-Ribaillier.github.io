@@ -2176,8 +2176,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .5em;
   margin-top: 0rem;
-  /* change here margin-left: .4rem; */
-  margin-left: -0.4rem;
+  /* change here margin-left: -0.4rem; */
+  margin-left: 1rem;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -2649,7 +2649,7 @@ html.no-csstransitions .hero-content {
 .position__header {
   margin-bottom: 4rem;
   /* added this */
-  margin-left:4rem;
+  margin-left:1rem;
 }
 
 .position__header h6 {
