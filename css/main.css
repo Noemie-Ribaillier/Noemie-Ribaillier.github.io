@@ -2648,6 +2648,8 @@ html.no-csstransitions .hero-content {
 
 .position__header {
   margin-bottom: 4rem;
+  /* added this */
+  margin-left:4rem;
 }
 
 .position__header h6 {
