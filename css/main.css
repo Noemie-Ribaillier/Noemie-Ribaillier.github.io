@@ -3260,7 +3260,7 @@ html.no-csstransitions .hero-content {
 .s-portfolio {
   padding-top: 24rem;
   /* changed here  */
-  padding-bottom: 4rem;
+  padding-bottom: 24rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -3724,6 +3724,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer .footer-contacts {
+  /* changed here  */
   margin-top: 7.2rem;
   margin-left: 8.33333%;
 }
