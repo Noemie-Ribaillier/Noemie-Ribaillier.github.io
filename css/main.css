@@ -1750,6 +1750,7 @@ input::-moz-focus-inner {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin: 0;
+  color:#000000;
 }
 
 /* added this  */
