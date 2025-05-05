@@ -2895,7 +2895,7 @@ html.no-csstransitions .hero-content {
   margin-top: 1rem;
   margin-bottom: 1rem;
   /* added this */
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .position__header h6 {
