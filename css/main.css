@@ -2185,7 +2185,7 @@ input::-moz-focus-inner {
 .hero-social2 a {
   /* colorgb(249, 26, 26)61a; */
   color: #f9861a;
-  margin-left: -0.4rem;
+  /* margin-left: -0.4rem; */
 }
 
 .hero-social2 a:hover,
