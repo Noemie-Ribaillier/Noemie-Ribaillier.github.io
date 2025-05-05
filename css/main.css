@@ -1873,8 +1873,11 @@ input::-moz-focus-inner {
  * ## download resume button
  * ------------------------------------------------------------------- */
 .header-content .btn {
-  border-color: #ffffff;
-  color: #ffffff;
+  /* border-color: #ffffff;
+  color: #ffffff; */
+  /* changed here  */
+  border-color: #555;
+  color: #333;
   margin: 0;
   padding: 0 4rem;
   font-size: 1.1rem;
