@@ -1763,7 +1763,8 @@ input::-moz-focus-inner {
 }
 
 .header-nav a {
-  color: rgba(255, 255, 255, 0.4);
+  /* color: rgba(255, 255, 255, 0.4); */
+  color: #555;
 }
 
 .header-nav a:hover,
