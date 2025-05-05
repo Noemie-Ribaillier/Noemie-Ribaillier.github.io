@@ -2297,7 +2297,8 @@ input::-moz-focus-inner {
   height: 100vh;
   min-height: 82rem;
   overflow: hidden;
-  background-color: transparent;
+  /* transparent */
+  background-color: #ffffff;
   position: relative;
 }
 
