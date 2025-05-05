@@ -2423,7 +2423,7 @@ input::-moz-focus-inner {
   letter-spacing: .5em;
   margin-top: 0rem;
   /* change here margin-left: -0.4rem; */
-  margin-left: 0rem;
+  margin-left: -0.4rem;
   margin-bottom: 2rem;
   position: relative;
 }
