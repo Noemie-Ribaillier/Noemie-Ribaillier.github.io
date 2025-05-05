@@ -6,263 +6,8 @@
     <meta charset="utf-8">
     <title>Portfolio - Noémie Ribaillier</title>
     <style>
-        /* body {
-          font-family: Arial, sans-serif;
-          margin: 40px;
-          background: #f5f5f5;
-        } */
-    
-        .image-grid {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
-        }
-    
-        /* the small cards */
-        .image-card {
-          background: white;
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0, 255, 0, 0.1);
-          overflow: hidden;
-          max-width: 300px;
-          width: 100%;
-          cursor: pointer;
-          transition: transform 0.2s;
-          display: flex;
-          flex-direction: column;
-          /* align-items: center; */
-          padding-left: 5px;
-        }
-
-        .image-card:hover {
-          transform: scale(1.02);
-        }
-    
-        .image-card img {
-          width: 100%;
-          padding-left: 0;
-
-          height: auto;
-          display: block;
-        }
-    
-        .card-content {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 5px;
-        }
-    
-
-
-
-        .card-title {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-            font-weight: bold;
-            text-align: left;
-            margin-left: 0;
-            color:#0b0a15;
-        }
-    
-        .card-subtitle {
-            font-size: 0.95em;
-            color: #666;
-            margin-bottom: 10px;
-            text-align: left;
-            margin-left: 0;
-            padding-left:0;
-        }
-    
-        .card-link {
-          color: #f9861a;
-          text-decoration: none;
-          font-size: 0.9em;
-        }
-
-        /* .card-link a {
-            color: #ee0505;
-        } */
-
-        .card-link:hover {
-            color: #555;
-        }
-
-
-    
-        .modal {
-            /* display: flex; */
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(235, 8, 8, 0.6);
-
-            /* display: flex; */
-            justify-content: center;
-            align-items: center;
-
-            z-index: 999;
-            overflow: auto;
-        }
-
-        /* when we click on the card */
-        .modal-content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;       /* Limits size */
-            width: 90%;             /* Scales for small screens */
-            box-sizing: border-box; /* Prevent overflow */
-            text-align: center;
-            position: relative;
-            float: none;             /* If needed */
-            margin: 0;          /* Optional centering */
-            display:flex;
-            flex-direction:column;
-        }
-    
-        .modal-content img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin-bottom: 15px;
-        }
-    
-        /* title of the big card */
-        .modal-title {
-          font-size: 1.4em;
-          margin-bottom: 10px;
-          text-align: left;
-          color:red;
-        }
-    
-        .modal-description {
-          font-size: 1em;
-          color: #444;
-          text-align: left;
-        }
-
-        .tags {
-            /* margin-top: 10px;
-            text-align: left;
-            color:chartreuse; */
-
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* space between keywords */
-            /* change here from top to bottom margin-bottom: 20px; */
-            margin-bottom: 20px;
-            /* add marge top */
-            margin-top: 0px;
-        }
-
-        .tag {
-            /* display: inline-block;
-            background-color: #eee;
-            color: #333;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            margin: 2px; */
-
-            background-color: #333;
-            color: #ffffff ;
-            font-size: 0.8rem;
-            padding: 0.4rem 1rem;
-            border-radius: 15px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-            cursor: default;
-            display: inline-block;
-            margin: 2px;
-        }
-    
-        .close-button {
-          position: absolute;
-          top: 10px;
-          right: 15px;
-          font-size: 20px;
-          cursor: pointer;
-          color: #999;
-        }
-    
-        .close-button:hover {
-          color: #000;
-        }
-
-        .card-container {
-            perspective: 1000px;
-            width: 300px;
-        }
-
-        .card {
-            width: 100%;
-            height: 400px;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.8s;
-            cursor: pointer;
-        }
-
-        .card.is-flipped {
-            transform: rotateY(180deg);
-        }
-
-        .card-side {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background: white;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .card-front {
-            padding: 0; /* remove internal padding so image touches edges */
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .card-front img {
-            width: 100%;
-            height: 200px; /* or auto or any height you like */
-            object-fit: cover; /* crop to fill the space */
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            margin: 0;
-        }
-
-        .card-front-content {
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            flex: 1;
-        }
-
-
-
-
-        .card-back {
-            transform: rotateY(180deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-        }
-    
-        @keyframes fadeIn {
-          from { opacity: 0; transform: scale(0.95); }
-          to { opacity: 1; transform: scale(1); }
-        }
+        
+        
     </style>
     <meta name="description" content="">
     <meta name="author" content="Noémie Ribaillier">
@@ -329,18 +74,6 @@
             <a href="#" class="btn btn--stroke btn--small spanish-link" data-en="Download my CV" data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-es="https://github.com/Noemie-Ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ESP.pdf">Descargar mi CV</a>
         </div>
 
-
-        <!-- <a href="#" class="btn btn--stroke btn--small spanish-link" data-en="Download my CV" data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-es="https://github.com/Noemie-Ribaillier/Noemie-Ribaillier.github.io/raw/main/CV_Ribaillier_Noemie_ESP.pdf">Descargar mi CV</a>
-
-        <a href="CV_Ribaillier_Noemie_ENG.pdf" class="btn btn--stroke btn--small english-link"data-en="Download my CV"
-        data-fr="Télécharger mon CV" data-es="Descargar mi CV" data-href-en="CV_Ribaillier_Noemie_ENG.pdf" 
-        download target="_blank">Download my CV</a>
-
-
-        <a href="cv.pdf" download>
-            <button style="padding: 10px 20px; font-size: 16px;">📄 Download CV</button>
-          </a> -->
-
         <!-- Menu  -->
         <a class="header-menu-toggle" href="#0" data-en="Menu" data-fr="Menu" data-es="Menú"><span>Menu</span></a>
     </header> 
@@ -399,73 +132,18 @@
                     <!-- About description -->
                     <h3 data-aos="fade-up" data-en="Profile" data-fr="Profil">Profil</h3>
                     <div data-aos="fade-up">
-                        <p data-en="I have a double degree in the Econometrics & Statistics fields and I have 6 years of experience (as Data Analyst BI and Data Scientist), among 4 in the Netherlands. You can check more in details my education and work experience below.<br><br>
-                            I keep improving my skills in data and AI studying for certifications and developping projects, as you can also see more in details below.<br><br>
-                            Despite data and AI, I have a strong interest in sport and outdoor, travelling, baking and doing puzzles.<br>
-                            " 
-                            data-fr="J'ai un double diplôme en Econométrie & Statistiques et j'ai 6 ans d'expérience (en tant que Data Analyst BI et Data Scientist), dont 4 aux Pays-Bas. Ma formation et mon expérience professionnelle sont détaillées ci-dessous.<br><br>
-                            Je continue à améliorer mes compétences dans la data et l'IA en me formant et en développant des projets, comme vous pouvez le voir plus en détail ci-dessous.<br><br>
-                            A part la data et l'IA, j'ai un très fort intérêt pour le sport et le plein air, les voyages, la pâtisserie et les puzzles.<br>
-                            Je suis engagée dans des actions solidaires (don de sang autant que possible) et sensibilisée aux enjeux du développement durable.
-                            "
-                            data-es="Tengo un doble título en Econometría y Estadística y 6 años de experiencia (como analista de datos BI y científico de datos), 4 de ellos en los Países Bajos. Puede ver mi formación y experiencia laboral con más detalle a continuación.<br><br>
-                            Sigo mejorando mis habilidades en datos e IA formándome y desarrollando proyectos, como puedes ver con más detalle a continuación.<br><br>
-                            Aparte de los datos y la IA, tengo un gran interés por el deporte y las actividades al aire libre, los viajes, la repostería y los rompecabezas.<br>
-                            ">
-                            J'ai un double diplôme en Econométrie & Statistiques et j'ai 6 ans d'expérience (en tant que Data Analyst BI et Data Scientist), dont 4 aux Pays-Bas. Ma formation et mon expérience professionnelle sont détaillées ci-dessous.<br><br>
-                            Je continue à améliorer mes compétences dans la data et l'IA en me formant et en développant des projets, comme vous pouvez le voir plus en détail ci-dessous.<br><br>
-                            A part la data et l'IA, j'ai un très fort intérêt pour le sport et le plein air, les voyages, la pâtisserie et les puzzles.<br>
-                            Je suis engagée dans des actions solidaires (don de sang autant que possible) et sensibilisée aux enjeux du développement durable.
-                        </p>
-                        <p data-en="These are some of the sport challenges that I have done:" 
-                            data-fr="Voici les principaux challenges sportifs que j'ai relevés:"
-                            data-es="Estos son los principales retos deportivos a los que me he enfrentado:"
-                            style="margin-bottom: 0;">
-                            Voici les principaux challenges sportifs que j'ai relevés:
-                        </p>
-                        <ul style="margin-top: 0;">
-                            <li data-en="Biking the Pieterpad (crossing the Netherlands from south to north)" 
-                            data-fr="Pédaler le Pieterpad (traversée des Pays-Bas du sud au nord)"
-                            data-es="Ir en bici el Pieterpad (cruzar los Países Bajos de sur a norte)">
-                            Pédaler le Pieterpad (traversée des Pays-Bas du sud au nord)</li>
-                            <li data-en="Hiking the GR10 (Pyrénées crossing from west to east)" 
-                            data-fr="Randonner le GR10 (traversée des Pyrénées de l'ouest à l'est)"
-                            data-es="Caminar el GR10 (cruzada de los Pirineos de oeste a este)">
-                            Randonner le GR10 (traversée des Pyrénées de l'ouest à l'est)</li>
-                            <li data-en="Hiking the GR20 (Corsica crossing from north to south)" 
-                            data-fr="Randonner le GR20 (traversée de la Corse du nord au sud)"
-                            data-es="Caminar el GR20 (cruzada de la Corsica de norte a sur)">
-                            Randonner le GR20 (traversée de la Corse du nord au sud)</li>
-                            <li data-en="Amsterdam half marathon" 
-                            data-fr="Semi-marathon d'Amsterdam"
-                            data-es="Medio maratón de Ámsterdam">
-                            Semi-marathon d'Amsterdam</li>
-                        </ul>
-                        <p data-en="These are the countries that I have visited and preferred:" 
-                            data-fr="Voyages : Amérique du Sud (Chili, Pérou, Argentine) randonnées & woofing, Nouvelle-Zélande (randonnée en autonomie), Asie du Sud-Est (Viêt-Nam, Indonesie), Pays-Bas (randonnées pédestre et cyclistes)" 
-                            style="margin-bottom: 0;">
-                            Voyages : Amérique du Sud (Chili, Pérou, Argentine) randonnées & woofing, Nouvelle-Zélande (randonnée en autonomie), Asie du Sud-Est (Viêt-Nam, Indonesie), Pays-Bas (randonnées pédestre et cyclistes)
-                        </p>
-                        <!-- <ul style="margin-top: 0;">
-                            <li data-en="New-Zealand: it's an great country for hiking, the variety of landscapes is amazing (forests, fjords, deserts, volcanoes, plains, mountains and glaciers) and people there are so nice." 
-                            data-fr="La Nouvelle-Zélande : c'est un pays idéal pour la randonnée, la variété des paysages y est incroyable (forêts, fjords, déserts, volcans, plaines, montagnes et glaciers) et les gens y sont très gentils.">
-                            La Nouvelle-Zélande : c'est un pays idéal pour la randonnée, la variété des paysages y est incroyable (forêts, fjords, déserts, volcans, plaines, montagnes et glaciers) et les gens y sont très gentils.</li>
-                            <li data-en="Chile: " 
-                            data-fr="Le Chili : c'est un pays tout en longueur, étiré entre l'océan Pacifique et la cordillère des Andes, qui offre une diversité de paysages absolument extraordinaire (des étendues arides du désert d'Atacama au nord, aux vallées fertiles de l'Elqui et de la région de Santiago, berceaux de la production viticole, en passant par les lacs et forêts de la région des Lacs, jusqu'aux montagnes et glaciers de la Patagonie). Parmi tous ces paysages, je retiens le trek W dans le parc national Torres del Paine (ma toute première randonnée en autonomie de plusieurs jours).">
-                            Le Chili : c'est un pays tout en longueur, étiré entre l'océan Pacifique et la cordillère des Andes, qui offre une diversité de paysages absolument extraordinaire (des étendues arides du désert d'Atacama au nord, aux vallées fertiles de l'Elqui et de la région de Santiago, berceaux de la production viticole, en passant par les lacs et forêts de la région des Lacs, jusqu'aux montagnes et glaciers de la Patagonie). Parmi tous ces paysages, je retiens le trek W dans le parc national Torres del Paine (ma toute première randonnée en autonomie de plusieurs jours).</li>
-                            <li data-en="Netherlands: I must mention this country where I lived 4 years. The polder, canals. The most beautiful cities in my opinion are Delft, Utrecht " 
-                            data-fr="Les Pays-Bas : je suis obligée de mentionner ce pays qui m'a accueillie pendant plus de 4 ans. Ce pays est formidable de part sa culture vélo (et la liberté qu'il offre), la mentalité directe des habitants et la sécurité (en plus des incontournables canaux, moulins et champs de tulipes).">
-                            Les Pays-Bas : je suis obligée de mentionner ce pays qui m'a accueillie pendant plus de 4 ans. Ce pays est formidable de part sa culture vélo (et la liberté qu'il offre), la mentalité directe des habitants et la sécurité (en plus des incontournables canaux, moulins et champs de tulipes).</li>
-                        </ul> -->
-                        <p data-en="" 
-                            data-fr="M'expatrier m'a permis de développer une grande ouverture d'esprit et une capacité d'adaptation rapide à des environnements nouveaux, culturels et professionnels. Voyager dans des contextes variés a renforcé ma capacité à gérer le stress et à résoudre des problèmes de manière efficace, en particulier dans des situations imprévues. Enfin, mes expériences à l'étranger m'ont appris à être autonome, à prendre des initiatives et à organiser des projets de manière indépendante, en jonglant avec des imprévus."
-                            data-es="">
-                            M'expatrier m'a permis de développer une grande ouverture d'esprit et une capacité d'adaptation rapide à des environnements nouveaux, culturels et professionnels. Voyager dans des contextes variés a renforcé ma capacité à gérer le stress et à résoudre des problèmes de manière efficace, en particulier dans des situations imprévues. Enfin, mes expériences à l'étranger m'ont appris à être autonome, à prendre des initiatives et à organiser des projets de manière indépendante, en jonglant avec des imprévus.
-                        </p>
+                        
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Arrow down -->
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> 
     </section>
 
     <!-- Quels sont vos besoins ? -->
@@ -1859,3 +1537,68 @@
 
 
 </body>
+
+
+<!-- <p data-en="I have a double degree in the Econometrics & Statistics fields and I have 6 years of experience (as Data Analyst BI and Data Scientist), among 4 in the Netherlands. You can check more in details my education and work experience below.<br><br>
+    I keep improving my skills in data and AI studying for certifications and developping projects, as you can also see more in details below.<br><br>
+    Despite data and AI, I have a strong interest in sport and outdoor, travelling, baking and doing puzzles.<br>
+    " 
+    data-fr="J'ai un double diplôme en Econométrie & Statistiques et j'ai 6 ans d'expérience (en tant que Data Analyst BI et Data Scientist), dont 4 aux Pays-Bas. Ma formation et mon expérience professionnelle sont détaillées ci-dessous.<br><br>
+    Je continue à améliorer mes compétences dans la data et l'IA en me formant et en développant des projets, comme vous pouvez le voir plus en détail ci-dessous.<br><br>
+    A part la data et l'IA, j'ai un très fort intérêt pour le sport et le plein air, les voyages, la pâtisserie et les puzzles.<br>
+    Je suis engagée dans des actions solidaires (don de sang autant que possible) et sensibilisée aux enjeux du développement durable.
+    "
+    data-es="Tengo un doble título en Econometría y Estadística y 6 años de experiencia (como analista de datos BI y científico de datos), 4 de ellos en los Países Bajos. Puede ver mi formación y experiencia laboral con más detalle a continuación.<br><br>
+    Sigo mejorando mis habilidades en datos e IA formándome y desarrollando proyectos, como puedes ver con más detalle a continuación.<br><br>
+    Aparte de los datos y la IA, tengo un gran interés por el deporte y las actividades al aire libre, los viajes, la repostería y los rompecabezas.<br>
+    ">
+    J'ai un double diplôme en Econométrie & Statistiques et j'ai 6 ans d'expérience (en tant que Data Analyst BI et Data Scientist), dont 4 aux Pays-Bas. Ma formation et mon expérience professionnelle sont détaillées ci-dessous.<br><br>
+    Je continue à améliorer mes compétences dans la data et l'IA en me formant et en développant des projets, comme vous pouvez le voir plus en détail ci-dessous.<br><br>
+    A part la data et l'IA, j'ai un très fort intérêt pour le sport et le plein air, les voyages, la pâtisserie et les puzzles.<br>
+    Je suis engagée dans des actions solidaires (don de sang autant que possible) et sensibilisée aux enjeux du développement durable.
+</p>
+<p data-en="These are some of the sport challenges that I have done:" 
+    data-fr="Voici les principaux challenges sportifs que j'ai relevés:"
+    data-es="Estos son los principales retos deportivos a los que me he enfrentado:"
+    style="margin-bottom: 0;">
+    Voici les principaux challenges sportifs que j'ai relevés:
+</p>
+<ul style="margin-top: 0;">
+    <li data-en="Biking the Pieterpad (crossing the Netherlands from south to north)" 
+    data-fr="Pédaler le Pieterpad (traversée des Pays-Bas du sud au nord)"
+    data-es="Ir en bici el Pieterpad (cruzar los Países Bajos de sur a norte)">
+    Pédaler le Pieterpad (traversée des Pays-Bas du sud au nord)</li>
+    <li data-en="Hiking the GR10 (Pyrénées crossing from west to east)" 
+    data-fr="Randonner le GR10 (traversée des Pyrénées de l'ouest à l'est)"
+    data-es="Caminar el GR10 (cruzada de los Pirineos de oeste a este)">
+    Randonner le GR10 (traversée des Pyrénées de l'ouest à l'est)</li>
+    <li data-en="Hiking the GR20 (Corsica crossing from north to south)" 
+    data-fr="Randonner le GR20 (traversée de la Corse du nord au sud)"
+    data-es="Caminar el GR20 (cruzada de la Corsica de norte a sur)">
+    Randonner le GR20 (traversée de la Corse du nord au sud)</li>
+    <li data-en="Amsterdam half marathon" 
+    data-fr="Semi-marathon d'Amsterdam"
+    data-es="Medio maratón de Ámsterdam">
+    Semi-marathon d'Amsterdam</li>
+</ul>
+<p data-en="These are the countries that I have visited and preferred:" 
+    data-fr="Voyages : Amérique du Sud (Chili, Pérou, Argentine) randonnées & woofing, Nouvelle-Zélande (randonnée en autonomie), Asie du Sud-Est (Viêt-Nam, Indonesie), Pays-Bas (randonnées pédestre et cyclistes)" 
+    style="margin-bottom: 0;">
+    Voyages : Amérique du Sud (Chili, Pérou, Argentine) randonnées & woofing, Nouvelle-Zélande (randonnée en autonomie), Asie du Sud-Est (Viêt-Nam, Indonesie), Pays-Bas (randonnées pédestre et cyclistes)
+</p>
+<ul style="margin-top: 0;">
+    <li data-en="New-Zealand: it's an great country for hiking, the variety of landscapes is amazing (forests, fjords, deserts, volcanoes, plains, mountains and glaciers) and people there are so nice." 
+    data-fr="La Nouvelle-Zélande : c'est un pays idéal pour la randonnée, la variété des paysages y est incroyable (forêts, fjords, déserts, volcans, plaines, montagnes et glaciers) et les gens y sont très gentils.">
+    La Nouvelle-Zélande : c'est un pays idéal pour la randonnée, la variété des paysages y est incroyable (forêts, fjords, déserts, volcans, plaines, montagnes et glaciers) et les gens y sont très gentils.</li>
+    <li data-en="Chile: " 
+    data-fr="Le Chili : c'est un pays tout en longueur, étiré entre l'océan Pacifique et la cordillère des Andes, qui offre une diversité de paysages absolument extraordinaire (des étendues arides du désert d'Atacama au nord, aux vallées fertiles de l'Elqui et de la région de Santiago, berceaux de la production viticole, en passant par les lacs et forêts de la région des Lacs, jusqu'aux montagnes et glaciers de la Patagonie). Parmi tous ces paysages, je retiens le trek W dans le parc national Torres del Paine (ma toute première randonnée en autonomie de plusieurs jours).">
+    Le Chili : c'est un pays tout en longueur, étiré entre l'océan Pacifique et la cordillère des Andes, qui offre une diversité de paysages absolument extraordinaire (des étendues arides du désert d'Atacama au nord, aux vallées fertiles de l'Elqui et de la région de Santiago, berceaux de la production viticole, en passant par les lacs et forêts de la région des Lacs, jusqu'aux montagnes et glaciers de la Patagonie). Parmi tous ces paysages, je retiens le trek W dans le parc national Torres del Paine (ma toute première randonnée en autonomie de plusieurs jours).</li>
+    <li data-en="Netherlands: I must mention this country where I lived 4 years. The polder, canals. The most beautiful cities in my opinion are Delft, Utrecht " 
+    data-fr="Les Pays-Bas : je suis obligée de mentionner ce pays qui m'a accueillie pendant plus de 4 ans. Ce pays est formidable de part sa culture vélo (et la liberté qu'il offre), la mentalité directe des habitants et la sécurité (en plus des incontournables canaux, moulins et champs de tulipes).">
+    Les Pays-Bas : je suis obligée de mentionner ce pays qui m'a accueillie pendant plus de 4 ans. Ce pays est formidable de part sa culture vélo (et la liberté qu'il offre), la mentalité directe des habitants et la sécurité (en plus des incontournables canaux, moulins et champs de tulipes).</li>
+</ul>
+<p data-en="" 
+    data-fr="M'expatrier m'a permis de développer une grande ouverture d'esprit et une capacité d'adaptation rapide à des environnements nouveaux, culturels et professionnels. Voyager dans des contextes variés a renforcé ma capacité à gérer le stress et à résoudre des problèmes de manière efficace, en particulier dans des situations imprévues. Enfin, mes expériences à l'étranger m'ont appris à être autonome, à prendre des initiatives et à organiser des projets de manière indépendante, en jonglant avec des imprévus."
+    data-es="">
+    M'expatrier m'a permis de développer une grande ouverture d'esprit et une capacité d'adaptation rapide à des environnements nouveaux, culturels et professionnels. Voyager dans des contextes variés a renforcé ma capacité à gérer le stress et à résoudre des problèmes de manière efficace, en particulier dans des situations imprévues. Enfin, mes expériences à l'étranger m'ont appris à être autonome, à prendre des initiatives et à organiser des projets de manière indépendante, en jonglant avec des imprévus.
+</p> -->
