@@ -3260,7 +3260,7 @@ html.no-csstransitions .hero-content {
 .s-portfolio {
   padding-top: 24rem;
   /* changed here  */
-  padding-bottom: 24rem;
+  /* padding-bottom: 24rem; */
   background-color: #ffffff;
   position: relative;
 }
