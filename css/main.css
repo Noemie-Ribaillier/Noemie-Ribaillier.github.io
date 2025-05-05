@@ -3698,7 +3698,8 @@ html.no-csstransitions .hero-content {
 .s-footer {
   /* change here padding-top: 24rem; */
   padding-top: 4rem;
-  padding-bottom: 8rem;
+  /* changed padding bottom 8  */
+  padding-bottom: 4rem;
   background-color: #0b0a15;
   position: relative;
 }
