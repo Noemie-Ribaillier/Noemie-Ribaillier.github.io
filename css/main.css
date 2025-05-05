@@ -1876,7 +1876,7 @@ input::-moz-focus-inner {
   /* border-color: #ffffff;
   color: #ffffff; */
   /* changed here  */
-  border-color: #555;
+  border-color: #333;
   color: #333;
   margin: 0;
   padding: 0 4rem;
@@ -2379,7 +2379,7 @@ input::-moz-focus-inner {
   margin-top: 2rem;
   /* changed here margin-left: .4rem; */
   margin-left: 0rem;
-  /* margin-bottom: 0; */
+  margin-bottom: 8rem;
   position: relative;
 }
 
@@ -3072,7 +3072,7 @@ html.no-csstransitions .hero-content {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
   /* changed this, was 3.6  */
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding-left: 1.111em;
   margin: 0;
   position: relative;
