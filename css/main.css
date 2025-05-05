@@ -2376,7 +2376,7 @@ input::-moz-focus-inner {
   margin-top: 2rem;
   /* changed here margin-left: .4rem; */
   margin-left: 0rem;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   position: relative;
 }
 
