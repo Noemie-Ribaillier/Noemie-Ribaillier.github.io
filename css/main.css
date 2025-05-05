@@ -2377,13 +2377,14 @@ input::-moz-focus-inner {
 
 .hero-social a {
   /* CHANGE HERE #ffffff */
-  color: #ffffff;
+  color: #f9861a;
 }
 
 .hero-social a:hover,
 .hero-social a:focus,
 .hero-social a:active {
-  color: #f9861a;
+  /* changed here  */
+  color: #555;
 }
 
 .hero-social li {
@@ -3783,7 +3784,8 @@ html.no-csstransitions .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px; /* space between icon and text */
+  /* gap: 5px;  */
+  /* space between icon and text */
 }
 
 .icon {
