@@ -2647,9 +2647,11 @@ html.no-csstransitions .hero-content {
 }
 
 .position__header {
-  margin-bottom: 4rem;
+    /* added this */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   /* added this */
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
 .position__header h6 {
