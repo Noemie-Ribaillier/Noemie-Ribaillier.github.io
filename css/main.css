@@ -1876,8 +1876,8 @@ input::-moz-focus-inner {
   /* border-color: #ffffff;
   color: #ffffff; */
   /* changed here  */
-  border-color: #333;
-  color: #333;
+  border-color: #555;
+  color: #555;
   margin: 0;
   padding: 0 4rem;
   font-size: 1.1rem;
