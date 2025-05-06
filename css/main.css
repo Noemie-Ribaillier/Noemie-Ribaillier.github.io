@@ -2385,7 +2385,7 @@ position: relative; */
   /* changed here margin-top: 8rem; */
   margin-top: 2rem;
   /* changed here margin-left: .4rem; */
-  margin-left: 0rem;
+  margin-left: -0.4rem;
   /* margin-bottom: 8rem; */
   position: relative;
 }
