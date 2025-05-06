@@ -1770,7 +1770,7 @@ input::-moz-focus-inner {
 .header-nav a:hover,
 .header-nav a:focus {
   /* changed this */
-  color: #000000 !important;
+  color: #f9861a !important;
 }
 
 .header-nav li {
