@@ -2299,15 +2299,20 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-hero {
-  width: 100%;
+  /* width: 100%; */
 /* changed this   height: 100vh; */
-  height: 150vh;
-  min-height: 82rem;
-  overflow: hidden;
+  /* height: 200vh;
+  min-height: 82rem; */
+  /* overflow: hidden; */
   /* transparent */
   background-color: #ffffff;
   position: relative;
+  padding-bottom: 16rem;
 }
+
+/* padding-bottom: 16rem;
+background-color: #ffffff;
+position: relative; */
 
 .s-hero::before {
   display: block;
