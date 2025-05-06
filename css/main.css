@@ -1793,7 +1793,7 @@ input::-moz-focus-inner {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: #333;
+  color: #555;
   outline: none;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -1807,7 +1807,7 @@ input::-moz-focus-inner {
 .header-menu-toggle:hover,
 .header-menu-toggle:focus {
   /* changed here  */
-  color: #b0d312;
+  color: #555;
 }
 
 .header-menu-toggle span {
