@@ -1793,7 +1793,7 @@ input::-moz-focus-inner {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: #ffffff;
+  color: #333;
   outline: none;
   -webkit-transition: all .3s;
   transition: all .3s;
