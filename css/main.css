@@ -1806,14 +1806,16 @@ input::-moz-focus-inner {
 
 .header-menu-toggle:hover,
 .header-menu-toggle:focus {
-  color: #ffffff;
+  /* changed here  */
+  color: #b0d312;
 }
 
 .header-menu-toggle span {
   display: block;
   width: 2.4rem;
   height: 2px;
-  background-color: #ffffff;
+  /* changed here  */
+  background-color: #fd0797;
   -webkit-transition: all .5s;
   transition: all .5s;
   font: 0/0 a;
@@ -1855,7 +1857,8 @@ input::-moz-focus-inner {
 
 .header-menu-toggle.is-clicked span::before,
 .header-menu-toggle.is-clicked span::after {
-  background-color: white;
+  /* changed here  */
+  background-color: rgb(238, 11, 11);
 }
 
 .header-menu-toggle.is-clicked span::before {
