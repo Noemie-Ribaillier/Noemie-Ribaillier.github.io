@@ -2386,7 +2386,7 @@ position: relative; */
   margin-top: 2rem;
   /* changed here margin-left: .4rem; */
   margin-left: 0rem;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
   position: relative;
 }
 
@@ -2881,7 +2881,7 @@ html.no-csstransitions .hero-content {
   position: absolute;
   top: 8rem;
   left: calc(50% + 80px);
-  margin-bottom:20rem;
+  /* margin-bottom:20rem; */
 }
 
 /* ------------------------------------------------------------------- 
