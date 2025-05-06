@@ -2875,6 +2875,7 @@ html.no-csstransitions .hero-content {
   position: absolute;
   top: 8rem;
   left: calc(50% + 80px);
+  margin-bottom:20rem;
 }
 
 /* ------------------------------------------------------------------- 
